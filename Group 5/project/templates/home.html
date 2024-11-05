@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/dumbbell.ico') }}">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SmartFit</title>
+    </head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">Smart<span>Fit</span></a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+         <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#blog">Blog</a></li> <!-- New Blog link -->
+         </ul>
+
+         <div class="top-btn">
+            <a href="{{ url_for('index') }}" class="btn">Get Started</a>
+          </div>    
+    </header>
+    
+    <!-- Home Section code-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Empower Your</h3>
+            <h1>Fitness Goals</h1>
+            <h3><span class="multiple-text">Wellness Dreams</span></h3>
+            <p>Start your journey with SmartFit today and unlock the potential within you.Your path to a healthier, happier you begins now.</p>
+            <a href="{{ url_for('index') }}" class="btn">Get Started</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='images/home-img.png') }}" alt="Home Image">
+         </div>
+    </section>
+
+    <!-- About Section code-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='images/about1.jpg') }}" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Why Choose Us?</h2>
+                <p>Choose us for proper diet plans that cater to your specific needs and goals.</p>
+                <p>Our AI-driven workouts are customized to your fitness level and progress.</p>
+                <p>Our app simplifies your fitness journey, making it easy to reach your goals and maintain a healthy lifestyle.</p>
+        </div>
+    </section>
+
+    <!-- Review Section code-->
+    <section class="review" id="review">
+        <div class="review-box">
+            <h2 class="heading">User <span>Reviews</span></h2>
+            <div class="wrapper">
+                <div class="review-item">
+                    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="">
+                    <h2>John</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                    </div>
+                    <p>I appreciate how the app adapts to my progress and keeps me pushing toward my goals.</p>
+                </div>
+
+                <div class="review-item">
+                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="">
+                    <h2>Steve</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                    </div>
+                    <p>Easy to use and keeps me motivated every day.</p>
+                </div>
+
+                <div class="review-item">
+                    <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="">
+                    <h2>David</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                        <i class='bx bxs-star' id="Star"></i>
+                    </div>
+                    <p>The AI workouts keep me motivated and constantly challenge me—I've never been in better shape!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+

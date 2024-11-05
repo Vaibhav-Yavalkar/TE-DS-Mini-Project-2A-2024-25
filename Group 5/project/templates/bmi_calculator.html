@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        :root { 
+            --bg-color: #000;
+            --snd-bg-color: #111;
+            --text-color: #fff;   
+            --main-color: #6699ff; 
+        }
+
+        /* General body styling */
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Title styling */
+        h1 {
+            color: var(--main-color);
+            text-align: center;
+        }
+
+        /* Form styling */
+        form {
+            background-color: var(--snd-bg-color);
+            border: 2px solid var(--main-color);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto; /* Center form */
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Input styling */
+        /* Input styling */
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjust width to leave space */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid var(--main-color);
+            border-radius: 5px;
+            background-color: #222;
+            color: var(--text-color);
+            font-size: 16px;
+            box-sizing: border-box; /* Ensure padding doesn't overflow the container */
+}
+
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background: linear-gradient(135deg, #00bcd4, #0288d1);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            width: 100%; /* Full width */
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #0288d1, #00acc1);
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 10px rgba(0, 188, 212, 0.4);
+        }
+
+        input[type="submit"]:active {
+            background: linear-gradient(135deg, #007c91, #00bcd4);
+            transform: translateY(0);
+        }
+
+        /* Result styling */
+        h2 {
+            color: var(--main-color);
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h1>BMI Calculator</h1>
+        <label for="userheight">Height (cm):</label>
+        <input type="text" id="userheight" name="userheight" required>
+
+        <label for="userweight">Weight (kg):</label>
+        <input type="text" id="userweight" name="userweight" required>
+
+        <label for="userage">Age:</label>
+        <input type="text" id="userage" name="userage" required>
+
+        <input type="submit" value="Calculate BMI">
+    </form>
+
+    {% if bmi %}
+    <h2>Your BMI: {{ bmi }}</h2>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    {% endif %}
+</body>
+</html>

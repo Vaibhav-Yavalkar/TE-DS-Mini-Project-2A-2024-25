@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Percentage Calculator</title>
+    <style>
+        :root { 
+            --bg-color: #000;
+            --snd-bg-color: #111;
+            --text-color: #fff;   
+            --main-color: #6699ff;
+            --accent-color: #00bcd4;
+        }
+
+        /* General body styling */
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 500px;
+            background-color: var(--snd-bg-color);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--main-color);
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.5);
+            text-align: center;
+        }
+
+        /* Title styling */
+        h1 {
+            color: var(--main-color);
+            margin-bottom: 20px;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Unified input field styling */
+        input[type="text"], input[type="number"], select {
+            width: 100%; /* Full width for all fields */
+            padding: 10px;
+            border: 2px solid var(--main-color);
+            border-radius: 5px;
+            background-color: #222;
+            color: var(--text-color);
+            font-size: 16px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            padding: 10px;
+            background: linear-gradient(135deg, var(--accent-color), var(--main-color));
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%; /* Full width */
+        }
+
+        /* Hover and active effects */
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #0288d1, #00acc1);
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 10px rgba(0, 188, 212, 0.4);
+        }
+
+        input[type="submit"]:active {
+            background: linear-gradient(135deg, #007c91, #00bcd4);
+            transform: translateY(0);
+        }
+
+        /* Result styling */
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--main-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Body Fat Percentage Calculator</h1>
+        <form method="POST">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" name="height" id="height" required>
+
+            <label for="waist">Waist Circumference (cm):</label>
+            <input type="number" name="waist" id="waist" required>
+
+            <label for="neck">Neck Circumference (cm):</label>
+            <input type="number" name="neck" id="neck" required>
+
+            <input type="submit" value="Calculate">
+        </form>
+        {% if body_fat %}
+        <div class="result">
+            Your Body Fat Percentage: {{ body_fat }}%
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

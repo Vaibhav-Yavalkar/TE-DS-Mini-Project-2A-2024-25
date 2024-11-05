@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark grey background */
+    color: #FFFFFF; /* White text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #1E1E1E; /* Darker grey for container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker shadow for subtle depth */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White text for headings */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-input-container {
+    position: relative;
+    width: 70%; /* Same width as the search input */
+}
+
+#exercise-search {
+    width: 100%; /* Adjust to fill the container */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333333; /* Dark grey input background */
+    color: #FFFFFF; /* White text in input */
+    border: 1px solid #555555; /* Subtle grey border */
+    border-radius: 5px;
+}
+
+#exercise-search::placeholder {
+    color: #AAAAAA; /* Light grey for placeholders */
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #008cff;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#delete-all-btn {
+    padding: 10px 20px;
+    background-color: #2b2b2b;
+    color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#delete-all-btn:hover {
+    background-color: #000000;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: absolute;
+    background-color: #1E1E1E; /* Darker grey for dropdown */
+    border: 1px solid #555555; /* Subtle grey border */
+    width: 100%; /* Match the width of the input */
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    z-index: 1000;
+    color: #FFFFFF; /* White text for dropdown */
+    top: calc(100% + 5px); /* Position dropdown below the input */
+    left: 0;
+}
+
+.dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #333333; /* Darker grey on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Exercise Block Styles */
+.exercise {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #555555; /* Dark grey border */
+    border-radius: 8px;
+    background-color: #2B2B2B; /* Dark grey for exercise block */
+    color: #FFFFFF;
+}
+
+.exercise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercise-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Set Block Styles */
+.set-list {
+    margin-top: 10px;
+}
+
+.set {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.set-input {
+    width: 70px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #333333; /* Dark grey input */
+    color: #FFFFFF; /* White text */
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+/* Add Set and Add More Exercises Buttons */
+button.add-set,
+button.add-exercise {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #28a745; /* Green for add set button */
+    color: white;
+    margin-top: 10px;
+}
+
+button.add-set:hover {
+    background-color: #218838;
+}
+
+button.add-exercise {
+    background-color: #008cff; /* Blue for add exercise button */
+}
+
+button.add-exercise:hover {
+    background-color: #0056b3;
+}
+
+/* Delete buttons styling */
+.delete-exercise {
+    background-color: #1E1E1E; /* Dark background for delete buttons */
+    color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Delete button (cross symbol) styling */
+.delete-set {
+    background-color: transparent;  /* Transparent background for the cross button */
+    color: #dc3545;                 /* Red color for the cross */
+    border: none;                   /* No border */
+    font-size: 18px;                /* Increase font size for better visibility */
+    cursor: pointer;                /* Pointer cursor on hover */
+}
+
+.delete-set:hover {
+    color: #c82333;                 /* Darker red on hover */
+}
+
+.exercise-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #2B2B2B; /* Dark grey for exercise container */
+}
+
+/* General Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Set Header */
+.set-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.set-no-heading {
+    width: 30%; /* Adjust width */
+}
+
+.kg-heading,
+.reps-heading {
+    width: 35%; /* Adjust width */
+    text-align: center;
+}
+
+/* Set Styling */
+.set {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.set-input {
+    width: 60px; /* Reduced width */
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px; /* Reduced space between inputs */
+}
+
+/* Set Number Styling */
+.set-number {
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Add Set Button */
+button.add-set {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #08af2f;
+    color: white;
+    margin-top: 10px;
+}
+
+button.add-set:hover {
+    background-color: #218838;
+}

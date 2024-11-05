@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section with Swiper</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Optional: Your CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 400px; /* Adjust as needed */
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .blog-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<section class="blog" id="blog">
+    <div class="blog-box">
+        <h2 class="heading">Our <span>Blog</span></h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="blog-item">
+                        <img src="path_to_your_image1.jpg" alt="Blog 1">
+                        <h3>Blog Title 1</h3>
+                        <p>Blog content here.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-item">
+                        <img src="path_to_your_image2.jpg" alt="Blog 2">
+                        <h3>Blog Title 2</h3>
+                        <p>Blog content here.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-item">
+                        <img src="path_to_your_image3.jpg" alt="Blog 3">
+                        <h3>Blog Title 3</h3>
+                        <p>Blog content here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+        });
+    });
+</script>
+
+</body>
+</html>

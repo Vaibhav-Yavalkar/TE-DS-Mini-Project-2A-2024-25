@@ -1,0 +1,151 @@
+Serial No,Exercise Name,Muscle Group,Intensity Level,Suitable for BMI Case,Suitable for BFP Case,Reps,Sets,Duration (minutes),Rest (seconds)
+1,Bench Press,Chest,High,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",10,4,45,90
+2,Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,50,120
+3,Deadlift,Back,High,"Fitness, Athletes, Obese, Acceptable","Normal, Overweight, Severe Thinness",8,3,40,180
+4,Overhead Press,Shoulders,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Mild Thinness",12,4,30,90
+5,Barbell Row,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,3,35,90
+6,Bicep Curls,Biceps,Low,"Fitness, Athletes, Obese, Acceptable","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+7,Tricep Dips,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,25,75
+8,Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,40,90
+9,Leg Press,Legs,High,"Fitness, Obese, Athletes, Acceptable","Obese, Severe Obese, Normal",10,4,45,120
+10,Running,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0
+11,Cycling,Cardio,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,40,0
+12,Jump Rope,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0
+13,Push-Ups,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Obese",15,4,30,90
+14,Pull-Ups,Back,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+15,Plank,Core,Low,"Fitness, Acceptable, Obese, Athletes","Severe Thinness, Normal, Overweight",0,3,3,60
+16,Mountain Climbers,Core,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0
+17,Rowing Machine,Cardio,Medium,"Fitness, Obese, Athletes, Acceptable","Normal, Severe Obese, Overweight",0,0,20,0
+18,Kettlebell Swings,Full Body,High,"Fitness, Athletes, Obese, Acceptable","Mild Thinness, Severe Thinness, Overweight",12,4,30,90
+19,Step-Ups,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,4,30,60
+20,Battle Ropes,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+21,Leg Curl,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Overweight, Obese, Severe Obese",12,4,35,90
+22,Leg Extension,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Mild Thinness, Overweight",12,4,30,90
+23,Shoulder Press,Shoulders,Medium,"Fitness, Obese, Athletes, Acceptable","Normal, Overweight, Severe Obese",10,3,30,75
+24,Triceps Kickback,Triceps,Low,"Fitness, Acceptable, Obese, Athletes","Severe Thinness, Mild Thinness, Overweight",15,3,20,60
+25,Upright Row,Shoulders,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,25,60
+26,Chest Flyes,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",12,4,30,75
+27,Hammer Curls,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,3,25,60
+28,Triceps Overhead Press,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+29,Bulgarian Split Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",10,3,35,90
+30,Lat Pulldown,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75
+31,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,3,30,75
+32,Seated Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,90
+33,Incline Bench Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+34,Face Pulls,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+35,Side Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+36,Sumo Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120
+37,Dumbbell Curl,Biceps,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+38,Skull Crushers,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+39,Single-Leg Deadlift,Legs,High,"Fitness, Obese, Acceptable, Athletes","Normal, Mild Thinness, Overweight",10,3,35,90
+40,Bent-Over Row,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,90
+41,Dumbbell Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,40,90
+42,Front Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+43,Leg Raises,Core,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+44,Farmer's Walk,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0
+45,Cable Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+46,Dumbbell Shrugs,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75
+47,Box Jumps,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0
+48,Treadmill Sprints,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+49,Medicine Ball Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0
+50,Russian Twists,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60
+51,Glute Bridge,Glutes,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,25,75
+52,Cable Tricep Pushdown,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+53,Reverse Fly,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+54,Bent-Over Dumbbell Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+55,Kettlebell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+56,Dumbbell Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+57,Leg Extension Machine,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90
+58,Dumbbell Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+59,Incline Dumbbell Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+60,Hip Thrust,Glutes,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120
+61,Cable Chest Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+62,Standing Calf Raise,Calves,Low,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60
+63,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75
+64,Seated Leg Curl,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90
+65,Cable Crossovers,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+66,Tricep Rope Pushdown,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+67,Hanging Leg Raise,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+68,Rope Face Pulls,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+69,Step Mill,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+70,Incline Treadmill Walk,Cardio,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0
+71,Medicine Ball Woodchops,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+72,Reverse Lunge,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90
+73,Chest Dips,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",10,4,40,90
+74,Landmine Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,75
+75,Hanging Knee Raise,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+76,Dumbbell Front Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+77,Barbell Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120
+78,Dumbbell Bench Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+79,Kettlebell Swings,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,25,90
+80,Dumbbell Kickback,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75
+81,Seated Calf Raise,Calves,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,25,60
+82,Cable Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+83,Dumbbell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+84,Renegade Rows,Back,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,35,90
+85,Reverse Pec Deck Fly,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+86,Dumbbell Side Bend,Core,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+87,Plank,Core,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,5,0
+88,Push-Ups,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60
+89,Walking Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75
+90,Overhead Tricep Extension,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+91,Single Arm Dumbbell Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+92,Jump Rope,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0
+93,Cable Woodchoppers,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+94,Mountain Climbers,Core,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0
+95,Barbell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+96,Dumbbell Row to Triceps Kickback,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+97,Decline Push-Ups,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60
+98,Dumbbell Step-Ups,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75
+99,Bicycle Crunches,Core,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60
+100,Sled Push,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+101,Barbell Bench Press,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",10,4,30,75
+102,Dumbbell Tricep Dips,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75
+103,Hyperextensions,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,20,60
+104,Standing Military Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75
+105,Sumo Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+106,Russian Twists with Medicine Ball,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+107,Lateral Band Walks,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+108,Alternating Dumbbell Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+109,Tricep Kickbacks,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75
+110,T-Bar Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+111,Box Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120
+112,Cable Face Pulls,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,25,60
+113,Dumbbell Bulgarian Split Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+114,Cardio Kickboxing,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0
+115,Dumbbell Bench Press (Incline),Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+116,Kettlebell Goblet Squat,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,35,90
+117,Decline Bench Press,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,4,30,75
+118,Lying Leg Raises,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+119,High Knees,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0
+120,Chest Press Machine,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+121,Rope Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+122,Kettlebell Clean and Press,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,35,90
+123,Leg Press,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120
+124,Arnold Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75
+125,Ab Wheel Rollouts,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+126,Dumbbell Front Squat,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120
+127,Battle Ropes,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+128,Weighted Pull-Ups,Back,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,4,35,90
+129,Treadmill Running,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0
+130,Dumbbell Hammer Curl,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75
+131,Side Plank,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+132,Lateral Raises,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60
+133,Goblet Squat,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,35,90
+134,Single-Leg Glute Bridge,Glutes,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,25,75
+135,Barbell Curl,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75
+136,Swiss Ball Crunches,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+137,Chest Supported Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+138,Standing Calf Raises,Calves,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60
+139,Incline Dumbbell Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+140,Jump Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,30,75
+141,Box Jumps,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,25,60
+142,TRX Rows,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+143,Standing Dumbbell Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+144,Medicine Ball Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+145,Side Lunges,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,30,75
+146,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75
+147,Vertical Leg Raises,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60
+148,Burpees,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0
+149,Plank with Shoulder Tap,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60
+150,Bicycle Crunches,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60
