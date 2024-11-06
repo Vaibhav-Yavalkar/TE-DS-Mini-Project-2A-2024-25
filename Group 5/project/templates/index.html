@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="icon" type="images/dumbbell" href="/images/dumbbell.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFit</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">
+            <h1>SmartFit</h1>
+        </div>
+    </div>
+
+    <div class="message">
+        <h1>Empower Your Fitness Goals</h1>
+    </div>
+
+    <div class="products">
+        <div class="card1">
+            <div class="picture">
+                <img src="{{ url_for('static', filename='images/ddiet.jpg') }}" alt="Diet">
+                <h2>Diet Recommendation</h2>
+                <div class="button">
+                    <a href="{{ url_for('diet') }}" class="button1">Begin</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="picture">
+                <img src="{{ url_for('static', filename='images/workout.webp') }}" alt="Workout">
+                <h2>Workout Recommendation</h2>
+                <div class="button">
+                    <a href="{{ url_for('workout') }}" class="button1">Begin</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card3">
+            <div class="picture">
+                <img src="{{ url_for('static', filename='images/ai train.jpg') }}" alt="AI Trainer">
+                <h2>AI Trainer</h2>
+                <div class="button">
+                    <a href="{{ url_for('exercise') }}" class="button1">Begin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product2">
+        <div class="card4">
+            <div class="picture2">
+                <img src="{{ url_for('static', filename='images/goals.webp') }}" alt="Goals">
+                <h2>Gym Logger</h2>
+                <div class="button">
+                    <a href="{{ url_for('gymlogger') }}" class="button1">Begin</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card5">
+            <div class="picture3">
+                <img src="{{ url_for('static', filename='images/bmi.jpg') }}" alt="BMI Calculator">
+                <h2>BMI Calculator</h2>
+                <div class="button">
+                    <a href="{{ url_for('cal') }}" class="button1">Begin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,520 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   border: none;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: -apple-system, sans-serif;
+}
+
+:root {
+   --bg-color: #000;
+   --snd-bg-color: #111;
+   --text-color: #fff;
+   --main-color: #6699ff;
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body {
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+
+/* Section general styling */
+section {
+   min-height: 100vh;
+   padding: 10rem 8% 2rem;
+}
+
+/* Header */
+header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 9%;
+   background: rgba(0, 0, 0, 0);
+   backdrop-filter: blur(10px);
+   transition: all 0.5s ease;
+}
+
+.logo {
+   font-size: 3rem;
+   color: var(--text-color);
+   font-weight: 800;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+   transform: scale(1.1);
+}
+
+span {
+   color: var(--main-color);
+}
+
+.navbar {
+   display: flex;
+}
+
+.navbar a {
+   font-size: 1.8rem;
+   font-weight: 500;
+   color: var(--text-color);
+   margin-left: 4rem;
+   transition: all 0.5s ease;
+   border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
+}
+
+.nav-btn {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   background: transparent;
+   color: var(--main-color);
+   border: 2px solid var(--main-color);
+   border-radius: 1rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+   transition: all 0.5s ease;
+}
+
+.nav-btn:hover {
+   background: var(--main-color);
+   color: var(--text-color);
+   box-shadow: 0 0 18px var(--main-color);
+}
+
+#menu-icon {
+   font-size: 3.6rem;
+   color: var(--main-color);
+   cursor: pointer;
+   display: none;
+}
+
+/* Home section */
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-content h3 {
+   font-size: 5rem;
+   font-weight: 700;
+}
+
+.home-content span {
+   font-size: 4rem;
+   font-weight: 550;
+}
+
+.home-content h1 {
+   font-size: 5.6rem;
+   font-weight: 700;
+   line-height: 1.3;
+}
+
+.home-img img {
+   width: 45vw;
+}
+
+.home-content p {
+   font-size: 1.6rem;
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+}
+
+.btn {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   background: var(--main-color);
+   border-radius: 1rem;
+   box-shadow: none;
+   font-size: 1.6rem;
+   color: var(--bg-color);
+   letter-spacing: 0.1rem;
+   font-weight: 600;
+   transition: 0.5s ease;
+}
+
+.btn:hover {
+   color: var(--main-color);
+   box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+/* About section */
+.about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 3rem;
+}
+
+.about-img img {
+   width: 46vw;
+   height: 30vw;
+   border: 2px solid var(--text-color);
+   border-radius: 1rem;
+   transition: 0.5s ease;
+}
+
+.about-img img:hover {
+   transform: scale(1.02);
+   border: 2px solid var(--main-color);
+}
+
+.heading {
+   text-align: center;
+   font-size: 4.5rem;
+   margin-left: 5rem;
+   color: var(--main-color);
+}
+
+.about-content {
+   padding: 0 3rem;
+}
+
+.about-content h2 {
+   text-align: left;
+   line-height: 1.2;
+}
+
+.about-content p {
+   font-size: 1.8rem;
+   margin: 2rem 5rem 2rem;
+}
+
+/* Review section */
+.review {
+   background: var(--bg-color);
+}
+
+.review-box {
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.review .heading {
+   margin-bottom: 5rem;
+}
+
+.review-box img {
+   width: 15rem;
+   border-radius: 50%;
+   border: 3px solid var(--main-color);
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+.review-item {
+   min-height: 450px;
+   min-width: 350px;
+   background: var(--snd-bg-color);
+   border: 3px solid rgba(238, 238, 238, 0.3);
+   border-radius: 2rem;
+   margin: 0 2rem;
+   padding: 30px 40px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: #fff;
+   transition: 0.5s ease-in-out;
+}
+
+.review-item:hover {
+   border: 3px solid var(--main-color);
+   transform: translateY(-5px) scale(1.03);
+}
+
+.review-item h2 {
+   font-size: 2.8rem;
+}
+
+.review-item p {
+   font-size: 1.5rem;
+   line-height: 1.3rem;
+}
+
+#Star {
+   color: gold;
+}
+
+/* Blog section (new) */
+.blog {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
+   margin-top: 5rem;
+}
+
+.blog-post {
+   background: var(--snd-bg-color);
+   padding: 2rem;
+   border-radius: 1rem;
+   transition: 0.3s;
+   width: 30%;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+   width: 100%;
+   border-radius: 1rem;
+}
+
+.blog-post:hover {
+   transform: scale(1.05);
+}
+
+.blog-post h3 {
+   margin: 1.5rem 0;
+   font-size: 2.4rem;
+   color: var(--main-color);
+}
+
+.blog-post p {
+   font-size: 1.6rem;
+   color: #ddd;
+}
+
+/* Default spacing for all sections */
+section {
+   min-height: 100vh;
+   padding: 3rem 8% 2rem;
+   margin-bottom: 1rem; /* Adds space between sections */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+   html {
+       font-size: 55%;
+   }
+}
+
+@media (max-width: 991px) {
+   #menu-icon {
+       display: block;
+   }
+
+   .navbar {
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       width: 255px;
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+       background: var(--bg-color);
+       transition: all 0.5s ease;
+   }
+
+   .navbar a {
+       display: block;
+       padding: 17px;
+       font-size: 22px;
+   }
+
+   .navbar.active {
+       right: 0;
+   }
+
+   header {
+       padding: 2rem 3%;
+   }
+
+   section {
+       padding: 10rem 3%;
+   }
+
+   .about-content h2 {
+       margin-top: 2rem;
+       text-align: center;
+       font-size: 5rem;
+   }
+
+   .review .wrapper {
+       grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 786px) {
+   .home {
+       flex-direction: column;
+   }
+
+   .home-content h3 {
+       font-size: 4.5rem;
+       margin-top: 1.5rem;
+   }
+
+   .home-content h1 {
+       font-size: 5rem;
+       margin-top: 1.5rem;
+   }
+
+   .home-content {
+       order: 2;
+   }
+
+   .home-img img {
+       width: 70vw;
+       margin-top: 4rem;
+   }
+
+   .about {
+       flex-direction: column;
+   }
+
+   .about-content {
+       padding: 0;
+       margin-bottom: 2rem;
+   }
+
+   .about-img img {
+       width: 100%;
+   }
+}
+
+.heading {
+   margin-bottom: 20px; /* Space below the title */
+   color: var(--main-color); /* White color for the title */
+   font-size: 5rem; /* Increase font size if needed */
+   text-align: center; /* Center align the title */
+}
+
+.blog-item img {
+   max-width: 100%; /* Ensure images are responsive */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Rounded corners for images */
+   margin-bottom: 15px; /* Space below images */
+   margin-top: 20px; /* Add margin above images (optional if using heading margin) */
+}
+
+
+.blog {
+   padding: 40px 20px; /* Space around the blog section */
+   background-color: #000; /* Black background color */
+   border-radius: 10px; /* Rounded corners */
+   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Soft shadow with white color */
+}
+
+.blog-box {
+   max-width: 1000px; /* Set a max width for the container */
+   margin: 0 auto; /* Center the content */
+}
+
+.slider {
+   position: relative;
+   overflow: hidden; /* Hide overflow to show only one slide */
+   width: 100%; /* Full width of the parent container */
+}
+
+.slides {
+   display: flex; /* Align slides in a row */
+   transition: transform 0.5s ease; /* Animate the slide transition */
+}
+
+.slide {
+   min-width: 100%; /* Each slide takes full width */
+   box-sizing: border-box; /* Include padding and border in element's total width */
+   padding: 20px; /* Padding inside each slide */
+   text-align: center; /* Center text within each slide */
+}
+
+.blog-item {
+   margin: 0 10px; /* Add spacing between blog items */
+}
+
+.blog-item img {
+   max-width: 100%; /* Ensure images are responsive */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 8px; /* Rounded corners for images */
+   margin-bottom: 15px; /* Space below images */
+}
+
+.blog-item h3 {
+   font-size: 2rem; /* Increase font size for blog titles */
+   margin: 15px 0; /* Space above and below titles */
+   color: #fff; /* White color for titles */
+}
+
+.blog-item p {
+   font-size: 1.4rem; /* Increase font size for paragraphs */
+   line-height: 1.6; /* Line height for better readability */
+   color: #ddd; /* Light gray for text for better contrast against black */
+   margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.btn {
+   margin-top: 10px;
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #007bff; /* Primary color for buttons */
+   color: #fff; /* White text color */
+   border-radius: 5px; /* Rounded corners for buttons */
+   text-decoration: none; /* Remove underline */
+   font-weight: bold; /* Bold text for better visibility */
+   transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+   background-color: #0056b3; /* Darker shade on hover */
+}
+
+.prev, .next {
+   position: absolute; /* Absolute positioning for buttons */
+   top: 50%; /* Center vertically */
+   transform: translateY(-50%); /* Center adjustment */
+   background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+   color: #000; /* Black color for button text */
+   border: none; /* No border */
+   cursor: pointer; /* Pointer cursor on hover */
+   padding: 10px; /* Padding for buttons */
+   border-radius: 5px; /* Rounded corners */
+   font-size: 1.5rem; /* Font size for arrows */
+   transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.prev:hover, .next:hover {
+   background-color: rgba(255, 255, 255, 0.7); /* Darker background on hover */
+}
+
+.prev {
+   left: 10px; /* Positioning to the left */
+}
+
+.next {
+   right: 10px; /* Positioning to the right */
+}
+
+

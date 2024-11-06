@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (other head elements) ... -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gymlogger.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Logger</h1>
+        <div class="search-container">
+            <div class="search-input-container">
+                <input type="text" id="exercise-search" placeholder="Search for an exercise...">
+                <ul id="exercise-dropdown" class="dropdown hidden"></ul>
+            </div>
+            <button id="add-exercise-btn" class="btn-primary">Add Exercise</button>
+        </div>
+        
+        <div id="exercise-list"></div>
+        <br>
+        
+        <button id="delete-all-btn">Discard Workout</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='javascript/gymlogger.js') }}"></script>
+</body>
+</html>

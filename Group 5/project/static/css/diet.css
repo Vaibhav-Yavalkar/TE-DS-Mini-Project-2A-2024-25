@@ -1,0 +1,165 @@
+:root {
+    --bg-color: #000;
+    --snd-bg-color: #111;
+    --text-color: #fff;   
+    --main-color: #6699ff; 
+}
+
+html{
+    font-size: 62.5;
+    overflow-x: hidden;
+ }
+
+ body{
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ .name {
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    font-family: 'Antique Ancienne Italic', sans-serif;
+    background-color: black;
+    height: 100px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* Container for the form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 400px;
+    transform: translateX(-200px);
+    padding-right: 20px;
+    
+    
+}
+
+/* Styling the form itself */
+/* Styling the form itself */
+form {
+    background-color: #222; /* A darker color for better contrast with the border */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color); /* Blue gradient border */
+    width: 800px;
+    text-align: left;
+    color: var(--text-color); /* Text color using defined variable */
+    
+}
+
+
+/* Label styling for each input */
+label {
+    margin-bottom: 10px;
+    margin: 10px;
+    font-size: 25px;
+    color: var(--text-color); /* Ensure labels are readable */
+    font-weight: bold;
+}
+
+/* Input fields, dropdowns, and buttons have similar styling */
+input, select {
+    width: 100%; /* Full width for form elements */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: var(--bg-color); /* Background matches main background */
+    color: var(--text-color); /* Text color using defined variable */
+}
+
+/* Button for form submission */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color); /* Button matches main color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #557acc; /* Slightly darker shade for hover */
+}
+
+/* Additional styling for dropdowns (select elements) */
+select {
+    appearance: none; /* Removes default browser arrow */
+    background-color: var(--bg-color); /* Same background as input */
+    color: var(--text-color); /* Same text color */
+    font-size: 25px;
+    padding-right: 30px; /* Space for custom arrow */
+    position: relative;
+}
+
+/* Custom arrow for dropdown (select) */
+select:after {
+    content: '▼'; /* Custom arrow symbol */
+    color: var(--text-color); /* Color for the arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #00bcd4, #0288d1);
+    color: white; /* White text */
+    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 188, 212, 0.4); /* Subtle shadow */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0288d1, #00acc1); /* Slightly darker on hover */
+    box-shadow: 0px 12px 20px rgba(0, 172, 193, 0.5);
+    transform: translateY(-3px);
+}
+
+input[type="submit"]:active {
+    background: linear-gradient(135deg, #007c91, #00bcd4); /* Darker when clicked */
+    transform: translateY(0);
+    box-shadow: 0px 6px 12px rgba(0, 188, 212, 0.4);
+}
+
+
+
+#height{
+    width: 775px;
+}
+#age{
+    width: 775px;
+}
+#weight{
+    width: 775px;
+}

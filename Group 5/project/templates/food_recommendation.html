@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='diet.css') }}">
+    <style>
+        :root {
+            --bg-color: #000;
+            --snd-bg-color: #111;
+            --text-color: #fff;
+            --main-color: #6699ff;
+            --error-color: red;
+            --summary-bg-color: var(--snd-bg-color);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        h1 {
+            color: var(--main-color);
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .meal-type {
+            text-align: center;
+            color: var(--text-color);
+            font-size: 28px;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 10px;
+        }
+
+        .meal-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .dish-card {
+            background-color: var(--snd-bg-color);
+            border: 1px solid var(--main-color);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .dish-card:hover {
+            transform: scale(1.05);
+        }
+
+        .dish-name {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 26px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+        .dish-details {
+            color: #ccc;
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .dropdown {
+            cursor: pointer;
+            margin-top: 20px;
+            color: var(--main-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .dropdown-content {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+            background-color: var(--snd-bg-color);
+            padding: 15px;
+            border-radius: 15px;
+            color: var(--text-color);
+        }
+
+        .dropdown-content p {
+            margin: 10px 0;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .dish-card.expanded {
+            height: auto;
+        }
+
+        /* Smooth transitions for dropdown content */
+        .dropdown-content {
+            transition: max-height 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Personalized Meal Plan</h1>
+
+    {% for meal_type, plan in meal_plan.items() %}
+        <h2 class="meal-type">{{ meal_type }}</h2>
+        <div class="meal-info">
+            {% if plan %}
+                {% for dish in plan %}
+                    <div class="dish-card">
+                        <div class="dish-name">{{ dish['Dish'] }}</div>
+                        <div class="dish-details">
+                            <span>Calories: {{ dish['Calories (kcal)'] }}</span><br>
+                            <span>Protein: {{ dish['Protein (g)'] }} g</span>
+                        </div>
+                        <div class="dropdown" onclick="toggleDropdown(this)">
+                            <span>View Ingredients & Recipe</span>
+                            <span>▼</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <p><strong>Ingredients:</strong> {{ dish['Ingredients'] }}</p>
+                            <p><strong>Recipe:</strong><br>
+                                {% for step in dish['Recipe'].split('\n') %}
+                                    {{ step }}<br><br>
+                                {% endfor %}
+                            </p>
+                        </div>
+                        
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No meals available for this meal type.</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <script>
+        function toggleDropdown(element) {
+            const dropdownContent = element.nextElementSibling;
+            const card = element.closest('.dish-card');
+
+            // Toggle the display of the dropdown content
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block";
+                card.classList.add('expanded');
+            } else {
+                dropdownContent.style.display = "none";
+                card.classList.remove('expanded');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Light background color for body */
+}
+
+.container {
+    display: flex;
+    width: 170vw; /* Adjust width as a percentage of viewport width */
+    max-width: 2000px; /* Maximum width */
+    height: 100vh; /* Adjust height as a percentage of viewport height */
+    margin: auto;
+    background-color: #AFDBF5; /* Light background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 22px;
+    color: #6699fd;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add border for the input fields */
+}
+
+.login-btn {
+    background-color: #6699ff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.signup a {
+    color: #6f72ed;
+    text-decoration: none;
+    font-weight: 600;
+}
+

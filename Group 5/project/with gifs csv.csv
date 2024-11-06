@@ -1,0 +1,634 @@
+Serial No,Exercise Name,Muscle Group,Intensity Level,Suitable for BMI Case,Suitable for BFP Case,Reps,Sets,Duration (minutes),Rest (seconds),Gifs,instructions
+1,Bench Press,Chest,High,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",10,4,45,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Bench-Press.gif,"1. Setup: Lie flat on a bench with your feet firmly on the ground. Grip the barbell slightly wider than shoulder-width, keeping your wrists straight and elbows at a 90-degree angle.
+
+2. Lowering the Bar: Slowly lower the bar to your mid-chest, keeping your elbows at about a 45-degree angle to your body. Maintain control and avoid bouncing the bar.
+
+3. Pressing Up: Push the barbell back up in a straight line by extending your arms, fully engaging your chest and triceps. Lock your elbows at the top to complete the rep.
+"
+2,Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,50,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Squat.gif,"1.Stand with feet shoulder-width apart, toes slightly pointed out, and hold the dumbbell across your shoulders.
+2.Lower your hips down and back, keeping your chest up and knees in line with your toes.
+3.Push through your heels to return to a standing position."
+3,Deadlift,Back,High,"Fitness, Athletes, Obese, Acceptable","Normal, Overweight, Severe Thinness",8,3,40,180,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Deadlift.gif,"1.Stand with feet hip-width apart, barbell over mid-foot, and grip the bar with both hands.
+2.Hinge at your hips, bend your knees, and lift the bar by extending your hips and knees.
+3.Lower the bar back to the ground by hinging at your hips and keeping your back straight."
+4,Overhead Press,Shoulders,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Mild Thinness",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Standing-Dumbbell-Overhead-Press.gif,"1.Stand with feet shoulder-width apart and grip the barbell at shoulder height with palms facing forward.
+2.Press the barbell overhead, fully extending your arms.
+3.Lower the barbell back to shoulder height in a controlled manner."
+5,Barbell Row,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,3,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Bent-Over-Row.gif,"1 .Stand with feet shoulder-width apart, holding a barbell with a pronated grip.
+2.Bend your knees slightly and hinge at the hips, bringing your torso near parallel to the ground.
+3.Pull the barbell to your lower chest while keeping your elbows close to your body, then lower it back down."
+6,Bicep Curls,Biceps,Low,"Fitness, Athletes, Obese, Acceptable","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://github.com/silence-killer45/gifs/blob/main/Dumbbell-Curl.gif?raw=true,"1.Stand with feet hip-width apart and hold dumbbells in each hand, palms facing forward.
+2.Curl the dumbbells up toward your shoulders, keeping your elbows close to your sides.
+3.Lower the weights back down slowly to the starting position."
+7,Tricep Dips,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,25,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Triceps-Dips.gif,"1.Position your hands shoulder-width apart on a bench or dip bar, legs extended forward.
+2.Lower your body by bending your elbows, keeping them close to your sides.
+3.Push yourself back up to the starting position, fully extending your arms.
+"
+8,Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,40,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/bodyweight-lunges.gif,"1.Stand with feet hip-width apart, holding dumbbells at your sides.
+2.Step forward with one leg and lower your body until both knees are at 90 degrees.
+3.Push through your front heel to return to the starting position and repeat on the other leg."
+9,Leg Press,Legs,High,"Fitness, Obese, Athletes, Acceptable","Obese, Severe Obese, Normal",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Leg-Press.gif,"1.Sit on the leg press machine with feet shoulder-width apart on the platform.
+2.Push the platform away by extending your legs without locking your knees.
+3.Slowly lower the platform back until your knees are at 90 degrees."
+10,Running,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Run.gif,"Start with a light jog to warm up.
+Increase your pace to a comfortable running speed, maintaining good posture.
+Focus on steady breathing and rhythmic steps throughout the run."
+11,Cycling,Cardio,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,40,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/cycling.gif,"1.Adjust the seat height of the bike so your legs are slightly bent at the bottom of the pedal stroke.
+2.Begin pedaling at a moderate pace, gradually increasing resistance.
+3.Maintain a steady rhythm while keeping your back straight and core engaged."
+12,Jump Rope,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Jump-Rope.gif,"1.Hold the handles of the jump rope with your hands slightly above waist level.
+2.Jump a few inches off the ground as the rope passes beneath your feet.
+3Keep a steady rhythm, using your wrists to spin the rope and avoiding large jumps.."
+13,Push-Ups,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Obese",15,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Push-Up.gif,"1.Get into a high plank position with your hands shoulder-width apart.
+2.Lower your body until your chest is just above the ground.
+3.Push through your palms to return to the starting position, keeping your core tight."
+14,Pull-Ups,Back,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Pull-up.gif,"1.Grip the pull-up bar with hands shoulder-width apart and palms facing away.
+2.Pull yourself up until your chin is above the bar.
+3.Lower yourself down in a controlled manner to the starting position."
+15,Plank,Core,Low,"Fitness, Acceptable, Obese, Athletes","Severe Thinness, Normal, Overweight",0,3,3,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/plank.gif,"1.Start in a forearm plank position with elbows under shoulders and body in a straight line.
+2.Keep your core engaged and avoid letting your hips drop or rise.
+3.Hold this position for the desired amount of time."
+16,Mountain Climbers,Core,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Mountain-climber.gif,"1.Start in a high plank position with hands under shoulders.
+2.Drive one knee toward your chest while keeping the other leg extended.
+3.Alternate legs quickly, as if running in place while maintaining plank form."
+17,Rowing Machine,Cardio,Medium,"Fitness, Obese, Athletes, Acceptable","Normal, Severe Obese, Overweight",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Rowing-Machine.gif,"1.Sit on the rowing machine with feet strapped in and grab the handle with both hands.
+2.Push through your legs while pulling the handle toward your chest, leaning back slightly.
+3.Return to the starting position by reversing the motion, extending arms first, then legs."
+18,Kettlebell Swings,Full Body,High,"Fitness, Athletes, Obese, Acceptable","Mild Thinness, Severe Thinness, Overweight",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Kettlebell-Swings.gif,"1.Stand with feet shoulder-width apart, holding the kettlebell with both hands in front of you.
+2.Hinge at your hips and swing the kettlebell back between your legs.
+3.Drive your hips forward to swing the kettlebell up to chest height, then let it swing back down."
+19,Step-Ups,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,4,30,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lateral-Step-up.gif,"1.Stand in front of a bench or step and hold dumbbells at your sides.
+2.Step up with one foot, driving through your heel to lift your body onto the bench.
+3.Step back down with the same foot and repeat on the other side."
+20,Battle Ropes,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Battle-Rope.gif,"1.Stand with feet shoulder-width apart, knees slightly bent, and hold a battle rope in each hand.
+2.Rapidly alternate swinging the ropes up and down using your arms.
+3.Keep a steady pace and maintain core engagement throughout."
+21,Leg Curl,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Overweight, Obese, Severe Obese",12,4,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Leg-Curl.gif,"1.Sit on the leg curl machine and position your legs under the padded bar, feet pointing forward.
+2.Curl your legs by bending your knees and bringing your heels toward your glutes.
+3.Slowly return to the starting position by extending your legs fully."
+22,Leg Extension,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Mild Thinness, Overweight",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/LEG-EXTENSION.gif,"1.Sit on the leg extension machine with your shins under the padded bar.
+2.Extend your legs by straightening your knees while keeping your back flat against the seat.
+3.Lower the weight back to the starting position in a controlled manner."
+23,Shoulder Press,Shoulders,Medium,"Fitness, Obese, Athletes, Acceptable","Normal, Overweight, Severe Obese",10,3,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lever-Shoulder-Press.gif,"1.Sit or stand with dumbbells or a barbell or  lever machine at shoulder height, palms facing forward.
+2.Press the weights overhead until your arms are fully extended.
+3.Lower the weights back down to shoulder height in a controlled motion."
+24,Triceps Kickback,Triceps,Low,"Fitness, Acceptable, Obese, Athletes","Severe Thinness, Mild Thinness, Overweight",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Kickback.gif,"1.Hold a dumbbell in one hand, bend at the hips, and keep your back flat.
+2.Extend your arm straight back by contracting your triceps, keeping your upper arm still.
+3.Lower the weight back to the starting position and repeat."
+25,Upright Row,Shoulders,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/upright.gif,"1.Stand with feet shoulder-width apart, holding a barbell or dumbbells in front of your thighs.
+2.Pull the weight straight up toward your chin, keeping your elbows higher than your wrists.
+3.Lower the weight back to the starting position slowly."
+26,Chest Flyes,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Chest-Fly-Machine.gif,"1.Lie on a flat bench with dumbbells in both hands, palms facing each other.
+2.With a slight bend in your elbows, open your arms wide, lowering the dumbbells to the sides.
+3.Bring the dumbbells back together at the top, squeezing your chest muscles."
+27,Hammer Curls,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Hammer-Curl.gif,"1.Stand with feet hip-width apart, holding dumbbells at your sides with palms facing your torso.
+2.Curl the dumbbells up toward your shoulders while keeping your palms facing inward.
+3.Lower the dumbbells back to the starting position."
+28,Triceps Overhead Press,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Cable-Rope-Overhead-Triceps-Extension.gif,"1.Hold a dumbbell or barbell or rope with both hands and lift it above your head, elbows pointing forward.
+2.Lower the weight behind your head by bending your elbows.
+3.Press the weight back up by extending your arms."
+29,Bulgarian Split Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Mild Thinness, Overweight",10,3,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Bulgarian-Split-Squat.gif,"1.stand in front of a bench and place one foot behind you on the bench.
+2.Lower your body by bending the front knee while keeping your torso upright.
+3.Push through the front heel to return to the starting position."
+30,Lat Pulldown,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lat-Pulldown.gif,"1.Sit at the lat pulldown machine and grasp the bar with a wide grip.
+2.Pull the bar down toward your chest, keeping your elbows pointed down and back.
+3.Slowly return the bar to the starting position, extending your arms fully."
+31,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,3,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Shoulder-Press.gif,"1.Hold dumbbells at shoulder height with palms facing forward.
+2.Press the dumbbells overhead until your arms are fully extended.
+3.Lower the dumbbells back down to shoulder height."
+32,Seated Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Seated-Row-Machine.gif,"1.Sit at a seated row machine with feet on the platform and grab the handles.
+2.Pull the handles toward your torso, keeping your back straight and elbows close to your body.
+3.Slowly extend your arms back to the starting position."
+33,Incline Bench Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Dumbbell-Press.gif,"1.Set the bench at an incline and lie back, gripping the barbell slightly wider than shoulder-width.
+2.Lower the barbell to your upper chest, keeping your elbows at a 45-degree angle.
+3.Press the barbell back up to the starting position."
+34,Face Pulls,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Face-Pull.gif,"1.Attach a rope to a cable machine at face height and grab the ends of the rope.
+2.Pull the rope toward your face, flaring your elbows out to the sides.
+3.Slowly extend your arms back to the starting position."
+35,Side Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Alternate-Dumbbell-Lateral-Raise.gif,"1.Stand with feet hip-width apart, holding dumbbells at your sides.
+2.Lift the dumbbells out to the sides until your arms are parallel to the floor.
+3.Lower the dumbbells back to your sides in a controlled motion."
+36,Sumo Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-sumo-squat.gif,"1.Stand with feet wider than shoulder-width apart, toes pointed out, and grip the barbell inside your legs.
+2.Hinge at your hips and lift the barbell by extending your knees and hips.
+3.Lower the barbell back to the ground by bending your hips and knees."
+37,Dumbbell Curl,Biceps,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Curl.gif,"1.Stand with feet hip-width apart, holding dumbbells with palms facing forward.Curl the dumbbells toward your shoulders, keeping your elbows close to your sides.2.
+Lower the dumbbells back down slowly to the starting position."
+38,Skull Crushers,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Skull-Crusher.gif,"1.Lie on a bench with a barbell or dumbbells held above your chest.
+2.Lower the weight toward your forehead by bending your elbows.
+3.Extend your arms to return to the starting position."
+39,Single-Leg Deadlift,Legs,High,"Fitness, Obese, Acceptable, Athletes","Normal, Mild Thinness, Overweight",10,3,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Kettlebell-Single-Leg-Deadlift.gif,"1.stand on one leg with a slight bend in the knee and hold a dumbbell in each hand.
+2.Hinge at your hips and lower the dumbbells toward the ground while extending your free leg behind you.
+3.Return to the starting position by contracting your glutes and standing upright."
+40,Bent-Over Row,Back,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Bent-Over-Dumbbell-Row.gif,"1.Stand with feet shoulder-width apart, holding a barbell or dumbbells, knees slightly bent.
+2.Bend forward at the waist, keeping your back straight and arms hanging down.
+3.Pull the weights toward your chest, squeezing your shoulder blades together, then lower them back down."
+41,Dumbbell Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,40,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Lunge.gif,"1.Stand tall holding dumbbells by your sides, feet together.
+2.Step forward with one leg, lowering your body until both knees are bent at 90-degree angles.
+3.Push off the front foot to return to the starting position, then repeat on the other leg."
+42,Front Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Alternating-Dumbbell-Front-Raise.gif,"1.Stand tall with feet shoulder-width apart, holding dumbbells in front of your thighs.
+2.Keeping your arms straight, lift the dumbbells in front of you until they are at shoulder height.
+3.Slowly lower them back down to the starting position."
+43,Leg Raises,Core,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lying-Leg-Raise.gif,"1.Lie flat on your back with your legs straight and hands under your hips for support.
+2.Lift both legs up until they form a 90-degree angle with your body.
+3.Slowly lower your legs back down without touching the floor and repeat."
+44,Farmer's Walk,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Farmers-walk_Cardio.gif,"1.Stand upright holding a dumbbell or kettlebell in each hand by your sides.
+2.Walk forward in a straight line, keeping your posture upright and core engaged.
+3.Walk for a set distance or time, then rest and repeat."
+45,Cable Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lying-Cable-Fly.gif,"1.lie on bench between two cable machines with the pulleys at shoulder height, holding a handle in each hand.
+2.Step forward slightly and extend your arms out to your sides with a slight bend in the elbows.
+3.Bring the handles together in front of your chest, squeeze, then slowly return to the starting position."
+46,Dumbbell Shrugs,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Shrug.gif,"1.Stand tall with feet shoulder-width apart, holding dumbbells by your sides.
+2.Lift your shoulders straight up towards your ears, squeezing at the top.
+3.Lower your shoulders back down to the starting position."
+47,Box Jumps,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/The-Box-Jump.gif,"1.Stand in front of a sturdy box or platform with feet shoulder-width apart.
+2.Bend your knees slightly and jump explosively onto the box, landing with both feet flat.
+3.Step back down carefully and repeat."
+48,Treadmill Sprints,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/TREADMIL.gif,"1.Set the treadmill to a challenging speed for sprinting.
+2.sprint at full speed for 20-30 seconds, maintaining proper running form.
+Rest for 30-60 seconds, then repeat for the desired number of intervals."
+49,Medicine Ball Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Medicine-ball-Overhead-Slam-exercise.gif,"1.Stand with feet shoulder-width apart, holding a medicine ball with both hands.
+2.Raise the ball overhead, fully extending your body.
+3.Slam the ball down forcefully onto the ground, bending your knees slightly as you follow through."
+50,Russian Twists,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Russian-Twist.gif,"1.Sit on the floor with knees bent and feet slightly lifted off the ground, holding a weight or medicine ball.
+2.Lean back slightly and twist your torso to the right, bringing the weight to the side of your body.
+3.Twist to the left side, continuing to alternate sides while keeping your core engaged."
+51,Glute Bridge,Glutes,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,25,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Glute-Bridge-.gif,"1.Lie on your back with knees bent and feet flat on the floor, arms by your sides.
+2.Push through your heels to lift your hips toward the ceiling, squeezing your glutes at the top.
+3.Lower your hips back down to the floor and repeat."
+52,Cable Tricep Pushdown,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Pushdown.gif,"1.Stand facing the cable machine with a straight bar attached, holding it with palms facing down.
+2.Keep your elbows close to your body and push the bar down until your arms are fully extended.
+3.Slowly return to the starting position, bending your elbows to 90 degrees."
+53,Reverse Fly,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Reverse-Fly.gif,"1.Hold dumbbells with your feet shoulder-width apart and bend forward at the waist.
+2.With a slight bend in your elbows, raise the dumbbells out to the side until they are level with your shoulders.
+3.slowly lower the dumbbells back down and repeat."
+54,Bent-Over Dumbbell Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Bent-Over-Dumbbell-Row.gif,"1.Stand with feet shoulder-width apart, holding a barbell or dumbbells, knees slightly bent.
+2.Bend forward at the waist, keeping your back straight and arms hanging down.
+3.Pull the weights toward your chest, squeezing your shoulder blades together, then lower them back down.
+"
+55,Kettlebell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/kettlebell-deadlift.gif,"1.Stand with feet hip-width apart, a kettlebell between your feet, and knees slightly bent.
+2.Bend at the hips, keeping your back straight, and grab the kettlebell with both hands.
+3.Drive through your heels to stand up straight, keeping the kettlebell close to your body, then lower it back down."
+56,Dumbbell Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Fly.gif,"1.Lie on a bench holding dumbbells with arms extended above your chest.
+2.Slowly lower the dumbbells out to your sides in a wide arc, keeping a slight bend in your elbows.
+3.Bring the dumbbells back together above your chest in the same arc, squeezing your chest muscles."
+57,Leg Extension Machine,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/LEG-EXTENSION.gif,"1.Sit on the leg extension machine with your feet under the padded bar, knees bent at 90 degrees.
+2.Extend your legs to lift the padded bar, straightening your knees fully.
+3.Lower the weight back down with control and repeat."
+58,Dumbbell Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Alternate-Dumbbell-Lateral-Raise.gif,"1.Stand with feet shoulder-width apart, holding dumbbells by your sides.
+2.With a slight bend in your elbows, lift the dumbbells out to the sides until they reach shoulder height.
+3.Slowly lower the dumbbells back down to your sides and repeat."
+59,Incline Dumbbell Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Dumbbell-Press.gif,"1.Set an incline bench at a 30-45 degree angle and lie back holding dumbbells at chest level.
+2.Press the dumbbells up until your arms are fully extended above your chest.
+3.Lower the dumbbells back down to the starting position, elbows bent at 90 degrees."
+60,Hip Thrust,Glutes,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Hip-Thrust.gif,"1Sit with your upper back resting on a bench and your feet flat on the floor, with a barbell or weight across your hips.
+2.Drive through your heels and lift your hips toward the ceiling, squeezing your glutes at the top.
+3.Lower your hips back down to the starting position and repeat."
+61,Cable Chest Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Cable-Crossover.gif,"1.Stand in the middle of two cable machines with handles set at the highest position.
+2.Step forward, pulling the handles down and in front of your body in a crossing motion.
+3.Slowly let the cables return to the starting position and repeat."
+62,Standing Calf Raise,Calves,Low,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Standing-Calf-Raise.gif,"1.Stand on a raised platform or step with your heels hanging off the edge, holding onto something for balance.
+2.Push through the balls of your feet to raise your heels as high as possible.
+3.Lower your heels back down below the platform and repeat."
+63,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Shoulder-Press.gif,"1.Stand or sit with your feet shoulder-width apart, holding dumbbells at shoulder height with palms facing forward.
+2.Press the dumbbells overhead until your arms are fully extended.
+3.Lower the dumbbells back down to shoulder height and repeat.
+"
+64,Seated Leg Curl,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Leg-Curl.gif,"1.Sit on the leg curl machine with your legs straight and the padded bar resting on your calves.
+2.Pull the padded bar down by curling your legs towards your butt.
+3.Slowly return to the starting position and repeat."
+65,Cable Crossovers,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Cable-Crossover.gif,"1.Stand in the middle of two cable machines with handles set at the highest position.
+2.Step forward, pulling the handles down and in front of your body in a crossing motion.
+3.Slowly let the cables return to the starting position and repeat."
+66,Tricep Rope Pushdown,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/One-arm-triceps-pushdown.gif,"1.Stand facing a cable machine with a rope attachment, holding it with single hand.
+2.Keep your elbows close to your body and push the rope down until your arms are fully extended.
+3.Return to the starting position with control and repeat.
+"
+67,Hanging Leg Raise,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Hanging-Knee-Raises.gif,"1.Hang from a pull-up bar with your arms extended and legs straight.
+2.Engage your core and raise your legs until they are parallel to the ground.
+3.Slowly lower your legs back down to the starting position and repeat."
+68,Rope Face Pulls,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Face-Pull.gif,"1.Stand facing a cable machine with a rope attachment set at eye level, holding the ends of the rope with both hands.
+2.Pull the rope towards your face, keeping your elbows high and squeezing your shoulder blades together.
+3.Slowly return to the starting position and repeat."
+69,Step Mill,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Walking-on-Stepmill.gif,"1.Step onto the Step Mill (or StairMaster), and select your desired speed.
+2.Begin climbing the moving steps, keeping a steady pace.
+3.Maintain posture and balance as you continue stepping."
+70,Incline Treadmill Walk,Cardio,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Treadmill.gif,"1.Set the treadmill at an incline (around 10-15%) and a walking speed.
+2.Walk at a steady pace, keeping your posture upright.
+3.Continue for your desired duration while focusing on your breathing and form.
+"
+71,Medicine Ball Woodchops,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/medical-ball-wood.gif,"1.Stand with feet shoulder-width apart, holding a medicine ball with both hands.
+2.Rotate your torso and lift the ball above one shoulder, then swing it diagonally down across your body towards the opposite knee.
+3.Return to the starting position and repeat on the other side..
+"
+72,Reverse Lunge,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/bodyweight-reverse-lunge.gif,"1Stand with feet hip-width apart, hands on your hips or holding dumbbells at your sides.
+2.Step one leg back into a lunge, lowering your back knee toward the ground.
+3.Push through your front heel to return to standing and repeat with the other leg.
+"
+73,Chest Dips,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",10,4,40,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Chest-Dips.gif,"1.Grab the dip bars with your palms facing inward and lift yourself up, extending your arms.
+2.Lower your body by bending your elbows until your chest dips just below the bars.
+3.Push yourself back up to the starting position, keeping your core engaged.
+"
+74,Landmine Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Obese, Normal, Overweight",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/landmind-press.gif,"1.Place one end of a barbell into a landmine attachment or secure it in a corner.
+2.Stand with feet shoulder-width apart, holding the free end of the barbell with one hand at shoulder height.
+3.Press the barbell up and forward, then lower it back down with control and repeat."
+75,Hanging Knee Raise,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Hanging-Knee-Raises.gif,"1.Hang from a pull-up bar with your arms fully extended and knees slightly bent.
+2.Engage your core and lift your knees towards your chest.
+3.Lower your knees back to the starting position and repeat."
+76,Dumbbell Front Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Alternating-Dumbbell-Front-Raise.gif,"1.Stand with feet hip-width apart, holding dumbbells in front of your thighs with palms facing down.
+2.Raise the dumbbells straight in front of you to shoulder height.
+3.Lower the dumbbells back down with control and repeat."
+77,Barbell Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/BARBELL-SQUAT.gif,"1. Position a barbell on your upper back, standing with feet shoulder-width apart.
+Lower your body into a squat by bending at your hips and knees, keeping your back straight.
+Push through your heels to return to standing and repeat.
+"
+78,Dumbbell Bench Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/16241301-Dumbbell-Reverse-Bench-Press_Chest_360.gif,"1Lie on a flat bench holding dumbbells at chest level, palms facing forward.
+Press the dumbbells up until your arms are fully extended above your chest.
+Lower the dumbbells back down to the starting position and repeat.
+"
+79,Kettlebell Swings,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,25,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Kettlebell-Swings.gif,"1.Stand with feet shoulder-width apart, holding a kettlebell with both hands.
+Bend your knees slightly and swing the kettlebell between your legs.
+Drive through your hips to swing the kettlebell up to shoulder height, then let it swing back down.
+"
+80,Dumbbell Kickback,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Kickback.gif,"1.Hold a dumbbell in one hand and bend forward at the waist, keeping your back straight.
+Keeping your upper arm close to your body, extend your elbow to straighten your arm behind you.
+Lower the dumbbell back down and repeat on the other arm.
+"
+81,Seated Calf Raise,Calves,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Weighted-Seated-Calf-Raise.gif,"1. Sit on the calf raise machine with your feet positioned on the platform and your knees under the padded bar.
+Push through the balls of your feet to raise your heels as high as possible.
+Slowly lower your heels back down below the platform and repeat.
+"
+82,Cable Lateral Raise,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Cable-Lateral-Raise.gif,"1. Stand next to a cable machine with the handle set to the lowest position.
+Hold the handle with one hand and raise your arm out to the side until it reaches shoulder height.
+Slowly lower the handle back down and repeat on the other side.
+"
+83,Dumbbell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/dumbbell-deadlifts.gif,"1.Stand with feet hip-width apart, holding dumbbells in front of your thighs.
+2.Hinge at the hips and lower the dumbbells towards the floor, keeping your back straight and knees slightly bent.
+3.Push through your heels to return to standing, lifting the dumbbells back to the starting position.
+"
+84,Renegade Rows,Back,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Kettlebell-Renegade-Row.gif,"1.Start in a plank position with hands gripping dumbbells on the floor.
+2.Row one dumbbell up towards your waist while stabilizing your body with the other hand.
+3.Lower the dumbbell back down and repeat on the other side.
+"
+85,Reverse Pec Deck Fly,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Reverse-Fly.gif,"1.Sit on the pec deck machine facing the pads, gripping the handles with your arms extended out in front of you.
+Open your arms, pulling the handles out to the sides, squeezing your shoulder blades together.
+Slowly return to the starting position and repeat.
+"
+86,Dumbbell Side Bend,Core,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Side-Bend.gif,"1Stand with feet shoulder-width apart, holding a dumbbell in one hand.
+Bend at your waist towards the side holding the dumbbell, lowering it down your leg.
+Return to the upright position and repeat on the other side.
+"
+87,Plank,Core,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,5,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/plank.gif,"1. Get into a push-up position but rest on your forearms instead of your hands.
+2.Keep your body in a straight line from your shoulders to your feet, engaging your core.
+3.Hold this position for as long as you can, keeping your body stable.
+"
+88,Push-Ups,Chest,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Push-Up.gif,"1.Start in a plank position with your hands slightly wider than shoulder-width apart.
+Lower your body by bending your elbows until your chest nearly touches the ground.
+Push through your palms to return to the starting position and repeat.
+"
+89,Walking Lunges,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Lunge.gif,"1.Stand with feet together, holding dumbbells at your sides or hands on your hips.
+2.Step forward with one leg and lower your body into a lunge, bending both knees at 90 degrees.
+3.Push through your front heel to step forward into the next lunge, alternating legs as you walk.
+"
+90,Overhead Tricep Extension,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Seated-One-Arm-Dumbbell-Triceps-Extension.gif,"1.Stand with feet shoulder-width apart, holding a dumbbell overhead with both hands.
+2.Bend your elbows to lower the dumbbell behind your head.
+3.Extend your arms to raise the dumbbell back overhead and repeat.
+"
+91,Single Arm Dumbbell Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Row.gif,"1.Place one knee and one hand on a bench, holding a dumbbell in the opposite hand.
+Row the dumbbell up towards your waist, keeping your back straight and elbow close to your body.
+Lower the dumbbell back down and repeat on the other side.
+"
+92,Jump Rope,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,10,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Jump-Rope.gif,"1. Hold the jump rope handles with the rope behind you.
+2.Swing the rope over your head and jump as it passes under your feet.
+3.Keep a steady rhythm, jumping continuously as the rope swings around.
+"
+93,Cable Woodchoppers,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/woodchopper.gif,"1.Stand next to a cable machine with the handle set to the highest position, holding the handle with both hands.
+Pull the handle diagonally down across your body, twisting your torso as you go.
+Slowly return to the starting position and repeat on the other side.
+"
+94,Mountain Climbers,Core,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Mountain-climber.gif,"1. Start in a plank position with your hands shoulder-width apart and your body in a straight line.
+2.Bring one knee towards your chest, then quickly switch legs, mimicking a running motion.
+3.Continue alternating legs, maintaining a steady pace.
+"
+95,Barbell Deadlift,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Deadlift.gif,"1.Stand with feet hip-width apart, gripping the barbell with both hands just outside your knees.
+2.Hinge at the hips and lower your body to grab the barbell, keeping your back straight.
+3.sPush through your heels to stand up, lifting the barbell to hip level, then lower it back down with control."
+96,Dumbbell Row to Triceps Kickback,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Kickback.gif,"1.Start in a bent-over position, holding a dumbbell in one hand with your back straight.
+2.Row the dumbbell up to your waist, then extend your arm straight back for a triceps kickback.
+3.Lower the dumbbell back down and repeat on the other side.and triceps. Lock your elbows at the top to complete the rep.
+"
+97,Decline Push-Ups,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Decline-Push-Up.gif,"1.Place your feet on an elevated surface, such as a bench, and your hands on the ground.
+
+2. Lower your chest towards the ground by bending your elbows.
+3.Push back up to the starting position and repeat.
+
+"
+98,Dumbbell Step-Ups,Legs,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbeel-Step-Up.gif,"1.Stand in front of a bench or step, holding dumbbells at your sides.
+
+2Step one foot onto the bench, driving through your heel to lift your body up.
+
+3Step down with the opposite foot and repeat on the other side.
+"
+99,Bicycle Crunches,Core,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Bicycle-Crunch.gif,"1. Lie on your back with your hands behind your head and your legs lifted in a tabletop position.
+
+2Bring one knee towards your chest while twisting your torso to bring the opposite elbow towards the knee.
+
+3Switch sides, alternating between your left and right knees and elbows.
+"
+100,Sled Push,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/sled.gif,"1. Load the sled with weights and stand behind it with your hands on the handles.
+
+2.Lean forward slightly and push the sled by driving through your legs.
+
+3.Push the sled forward for the desired distance or time.
+"
+101,Barbell Bench Press,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",10,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Bench-Press.gif,"1. Lie flat on a bench, grip the barbell slightly wider than shoulder-width apart.
+
+2.Lower the barbell towards your chest, keeping your elbows at a 45-degree angle..
+
+3. Push the barbell back up to the starting position and repeat.
+"
+102,Dumbbell Tricep Dips,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Triceps-Dips-on-Floor.gif,"1.Sit on a bench with your hands gripping the edge, and your feet flat on the floor in front of you.
+
+2. Slide off the bench, lowering your body by bending your elbows to a 90-degree angle.
+
+3. Push back up through your hands to extend your arms and repeat.
+"
+103,Hyperextensions,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Twisting-Hyperextension.gif,"1. Position yourself on a hyperextension bench, locking your feet under the pads.
+
+2.Lower your upper body towards the ground, keeping your back straight.
+
+3. Raise your torso back up until your body forms a straight line and repeat.
+"
+104,Standing Military Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Standing-Military-Press.gif,"1.  Stand with your feet shoulder-width apart, holding a barbell at shoulder level
+
+2.Press the barbell overhead by fully extending your arms.
+
+3. Lower the barbell back to shoulder height and repeat.
+"
+105,Sumo Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/dumbbell-sumo-squat.gif,"1.Stand with your feet wider than shoulder-width, toes pointing outwards, holding a dumbbell or kettlebell in front of you.
+
+2.Lower your hips into a squat position, keeping your knees in line with your toes.
+
+3.Push through your heels to return to standing and repeat.
+"
+106,Russian Twists with Medicine Ball,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Russian-Twist.gif,"1Sit on the floor with your knees bent, holding a medicine ball in front of your chest.
+
+2. Lean back slightly, then twist your torso to one side, tapping the medicine ball on the ground next to you.
+
+3. Twist to the opposite side and repeat.
+"
+107,Lateral Band Walks,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/walk.gif,"1. Place a resistance band around your legs just above your knees, and stand with feet shoulder-width apart.
+
+2. Step sideways with one leg, followed by the other leg, maintaining tension in the band.
+
+3.Continue walking sideways for the desired distance, then repeat in the opposite direction.
+"
+108,Alternating Dumbbell Press,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Press-1.gif,"1. Lie on a bench holding dumbbells at shoulder level.
+
+2Press one dumbbell overhead while keeping the other at shoulder height.
+
+3.Lower the dumbbell back down and press the opposite one, alternating between sides.
+"
+109,Tricep Kickbacks,Triceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Cable-Tricep-Kickback.gif,"1. Bend over at the waist with a cable in each hand, elbows bent at 90 degrees.
+
+2.Extend your arms straight back, contracting your triceps.
+
+3. Lower the cable back to the starting position and repeat.
+"
+110,T-Bar Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/t-bar-rows.gif,"1.Stand over the T-bar with a wide grip on the handles.
+
+2. Hinge at your hips and pull the T-bar towards your chest, keeping your elbows close to your body. 
+
+3. Lower the bar back down and repeat.
+"
+111,Box Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Bodyweight-Box-Squat.gif,"1.Stand in front of a box or bench, holding a barbell across your upper back.
+2. Lower your hips into a squat position until you sit on the box.
+
+3.Stand back up by pushing through your heels and repeat."
+112,Cable Face Pulls,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Face-Pull.gif,"1.Stand in front of a cable machine with the handle set at eye level.
+
+2.Grip the handle with both hands and pull it towards your face, keeping your elbows high.
+
+3. Slowly return the handle to the starting position and repeat.
+"
+113,Dumbbell Bulgarian Split Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Bulgarian-Split-Squat.gif,"1.Stand in front of a bench, placing one foot behind you on the bench.
+
+2.Lower your hips into a squat position, bending your front knee to 90 degrees.
+
+3. Push through your front heel to return to standing and repeat on the other leg.
+"
+114,Cardio Kickboxing,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/cardio-boxing.gif,"1.Start in a fighting stance with hands up and feet staggered.
+
+2.Throw punches, kicks, and combinations while moving quickly.     
+
+3. Continue for the desired time, maintaining high intensity.
+"
+115,Dumbbell Bench Press (Incline),Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Dumbbell-Press.gif,"1. Lie on an incline bench holding dumbbells at shoulder level.
+
+2.Press the dumbbells overhead by extending your arms fully.
+
+3. Lower the dumbbells back to the starting position and repeat.
+"
+116,Kettlebell Goblet Squat,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/kettlebell-goblet-squat.gif,"1.Hold a kettlebell by the horns close to your chest.
+
+2.Lower your hips into a squat position, keeping your chest upright.
+
+3. Push through your heels to return to standing and repeat.
+"
+117,Decline Bench Press,Chest,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Decline-Barbell-Bench-Press.gif,"1. Lie on a decline bench, gripping the barbell slightly wider than shoulder-width..
+Lower the barbell to your lower chest, keeping your elbows at a 45-degree angle.
+3. Push the barbell back up to the starting position and repeat.
+"
+118,Lying Leg Raises,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lying-Leg-Raise.gif,"1.Lie flat on your back with your legs extended.
+
+2. Lift your legs towards the ceiling, keeping them straight.
+
+3Slowly lower your legs back down without letting them touch the ground and repeat.
+"
+119,High Knees,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,15,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/High-Knee-Run.gif,"1. Stand with feet shoulder-width apart and arms at your sides.
+
+2. Run in place, driving your knees up towards your chest as high as possible.
+
+3. Continue for the desired time, moving quickly.
+"
+120,Chest Press Machine,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/chest-press.gif,"1.Sit on the machine with your back against the pad and your feet flat on the floor.
+
+2. Grip the handles and press them forward by extending your arms.
+
+3.Slowly return the handles to the starting position and repeat.
+"
+121,Rope Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Battle-Rope.gif,"1. Stand with your feet shoulder-width apart, gripping a battle rope in each hand.
+
+2.Raise both arms overhead, then slam the ropes down towards the ground with force.
+
+3. Repeat, maintaining a steady rhythm.
+"
+122,Kettlebell Clean and Press,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Kettlebell-Clean-and-Press.gif,"1. Stand with your feet shoulder-width apart, holding a kettlebell in one hand.
+
+2.Clean the kettlebell to shoulder height by using a hip drive, then press it overhead.
+
+3. Lower the kettlebell back down and repeat on the other side.
+"
+123,Leg Press,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,45,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Leg-Press.gif,"1. Sit on the leg press machine with your feet shoulder-width apart on the platform.
+
+2. Push the platform away from you by extending your legs.
+
+3.Lower the platform back down to the starting position and repeat.
+"
+124,Arnold Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Arnold-Press.gif,"1.Sit on a bench with dumbbells held at shoulder height, palms facing you.
+
+2.Rotate your wrists as you press the dumbbells overhead, ending with your palms facing forward.
+
+3. Lower the dumbbells back to the starting position, reversing the wrist rotation.
+"
+125,Ab Wheel Rollouts,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Ab-Wheel-Rollout.gif,"1. Kneel on the floor, gripping an ab wheel with both hands.
+
+2.Roll the wheel forward, extending your body into a plank position.
+
+3. Pull the wheel back towards your knees and repeat.
+"
+126,Dumbbell Front Squat,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",10,4,40,120,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/dumbell-front-squat.gif,"1.Stand with feet shoulder-width apart, holding dumbbells at shoulder height.
+
+2.Lower your hips into a squat position, keeping your chest upright.
+
+3. Push through your heels to return to standing and repeat.
+"
+127,Battle Ropes,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Battle-Rope.gif,"1. Stand with feet shoulder-width apart, gripping a battle rope in each hand.
+
+2.Move your arms up and down quickly, creating waves in the rope.
+
+3. Continue for the desired time, maintaining a fast pace..
+"
+128,Weighted Pull-Ups,Back,High,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",10,4,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Weighted-Pull-up.gif,"1. Attach a weight belt or hold a dumbbell between your legs.
+
+2. Hang from a pull-up bar with an overhand grip, slightly wider than shoulder-width.
+
+3Pull yourself up until your chin is above the bar, then lower yourself back down and repeat.
+"
+129,Treadmill Running,Cardio,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,30,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-Treadmill.gif,"1Set your treadmill to a comfortable running speed.
+
+2. Maintain a steady pace while keeping proper running form—head up, back straight, and arms swinging naturally.
+
+3. Run for your desired distance or time."
+130,Dumbbell Hammer Curl,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Hammer-Curl.gif,"1. Stand with a dumbbell in each hand, arms fully extended by your sides, palms facing your body.
+
+2.Curl the dumbbells towards your shoulders without rotating your wrists.
+
+3.Lower the dumbbells back down and repeat.
+"
+131,Side Plank,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Side-Plank-1-360x360.png,"1Lie on your side with your legs straight and your elbow directly beneath your shoulder.
+Lift your hips off the ground, forming a straight line from your head to your feet.
+
+3. Hold this position, then switch to the other side and repeat.
+"
+132,Lateral Raises,Shoulders,Low,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Seated-Rear-Lateral-Dumbbell-Raise.gif,"1.Stand with a dumbbell in each hand at your sides, palms facing inward.
+
+2.Raise both arms out to the sides until they reach shoulder height.
+
+3.Lower the dumbbells back down and repeat.
+"
+133,Goblet Squat,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,35,90,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/kettlebell-goblet-squat.gif,"1.Hold a kettlebell or dumbbell close to your chest with both hands. 
+
+2Lower your hips into a squat position, keeping your chest upright.
+3.Push through your heels to return to standing and repeat.
+
+"
+134,Single-Leg Glute Bridge,Glutes,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",12,4,25,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/single-glutes-bridge.gif,"1. Lie on your back with one knee bent and the other leg extended.
+2.Press through your heel to lift your hips off the ground, keeping your extended leg in line with your torso.r.
+
+3.Lower your hips back down and repeat on the other leg.
+"
+135,Barbell Curl,Biceps,Medium,"Fitness, Obese, Acceptable, Athletes","Severe Thinness, Mild Thinness, Normal",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Barbell-Curl.gif,"1. Stand with a barbell in your hands, arms fully extended and palms facing up.
+2. Curl the barbell towards your shoulders, keeping your elbows close to your body.
+
+3.Lower the barbell back down and repeat.
+"
+136,Swiss Ball Crunches,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/swiss.gif,"1Sit on a Swiss ball, then walk your feet forward until your lower back is supported by the ball.
+
+2.Perform a crunch by lifting your upper body off the ball while keeping your lower body stable
+
+3.Lower yourself back down and repeat.
+"
+137,Chest Supported Row,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/chest-supported.gif,"1Lie face down on an incline bench, holding a pair of dumbbells with arms fully extended.
+
+2. Pull the dumbbells towards your chest, squeezing your shoulder blades together.
+
+3Lower the dumbbells back down and repeat.
+"
+138,Standing Calf Raises,Calves,Medium,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Standing-Calf-Raise.gif,"1. Stand with your feet shoulder-width apart on a raised platform or step, with your heels hanging off the edge.
+
+2Push through the balls of your feet to lift your heels as high as possible
+
+3.Lower your heels back down and repeat.
+"
+139,Incline Dumbbell Flyes,Chest,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Incline-dumbbell-Fly.gif,"1. Lie on an incline bench with a dumbbell in each hand, arms extended above your chest.
+
+2.Lower the dumbbells out to the sides, keeping a slight bend in your elbows.
+
+3.Bring the dumbbells back together above your chest and repeat.
+"
+140,Jump Squats,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Jump-Squat.gif,"1.Stand with your feet shoulder-width apart, arms at your sides.
+
+2. Lower your hips into a squat position, then explode upwards, jumping as high as possible.
+3.Land softly and immediately lower into the next squat before jumping again.
+
+"
+141,Box Jumps,Legs,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",12,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/The-Box-Jump.gif,"1. Stand in front of a sturdy box or platform.
+
+2. Jump onto the box, landing softly with both feet.
+
+3.Step down and repeat.
+"
+142,TRX Rows,Back,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Ring-Inverted-Row.gif,"1. Hold the TRX handles with your body leaning back, arms extended and feet placed forward.
+
+2. Pull yourself up towards the handles, keeping your body straight.
+
+3. Lower yourself back down and repeat.
+"
+143,Standing Dumbbell Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Standing-Dumbbell-Overhead-Press.gif,"1. Stand with your feet shoulder-width apart, holding dumbbells at shoulder level.
+
+2. Press the dumbbells overhead until your arms are fully extended.
+
+3.Lower the dumbbells back to shoulder height and repeat.
+"
+144,Medicine Ball Slams,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Medicine-ball-Overhead-Slam-exercise.gif,"1. Stand with feet shoulder-width apart, holding a medicine ball overhead.
+
+2.Slam the ball down towards the ground with as much force as possible.
+
+3.Pick up the ball and repeat.
+"
+145,Side Lunges,Legs,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Severe Obese",15,3,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Side-Lunge-Stretch.gif,"1. Stand with feet together and hands in front of you.
+
+2. Step out to the side with one leg, lowering your hips into a lunge position.
+
+3. Push back up to standing and repeat on the other side.
+"
+146,Dumbbell Shoulder Press,Shoulders,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",12,4,30,75,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Dumbbell-Shoulder-Press.gif,"1.Sit on a bench with a dumbbell in each hand at shoulder height.
+
+2. Press the dumbbells overhead by fully extending your arms.
+
+3.Lower the dumbbells back down to shoulder height and repeat.
+"
+147,Vertical Leg Raises,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Lying-Leg-Raise.gif,"1. Hang from a pull-up bar with your legs extended.
+
+2. Raise your legs up towards your chest, keeping them straight.
+
+3. Lower your legs back down and repeat.
+"
+148,Burpees,Full Body,High,"Fitness, Acceptable, Obese, Athletes","Normal, Overweight, Severe Thinness,Mild Thinness,Severe Obese,Obese,Moderate Thinness",0,0,20,0,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/burpees.gif,"1Stand with your feet shoulder-width apart.
+
+2Drop into a squat, then kick your legs back into a push-up position.
+
+3. Perform a push-up, jump back to a squat position, and jump up, reaching your arms overhead.
+"
+149,weighted plank,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,25,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Weighted-Front-Plank.gif,"1.Get into Plank Position: Start in a forearm plank with your body in a straight line, elbows under shoulders, and feet together. Engage your core.
+
+2.Add Weight: Place a weight plate on your upper back or wear a weight vest for added resistance
+
+3.Hold and Breathe: Maintain the plank position for 20-60 seconds, focusing on breathing steadily and keeping your body stable.
+"
+150,Bicycle Crunches,Core,Medium,"Fitness, Obese, Acceptable, Athletes","Normal, Overweight, Obese",15,3,20,60,https://raw.githubusercontent.com/silence-killer45/gifs/refs/heads/main/Bicycle-Crunch.gif,"1. Lie flat on your back with your hands behind your head.
+
+2.Bring your right elbow towards your left knee while extending your right leg.
+
+3Switch sides, bringing your left elbow towards your right knee, and repeat.
+"

@@ -1,0 +1,122 @@
+:root {
+    --bg-color: #000;
+    --snd-bg-color: #111;
+    --text-color: #fff;   
+    --main-color: #6699ff; 
+}
+
+html{
+    font-size: 62.5;
+    overflow-x: hidden;
+ }
+
+ body{
+    background: var(--bg-color);
+    color: var(--text-color);
+ }
+
+ .name {
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    font-family: 'Antique Ancienne Italic', sans-serif;
+    background-color: black;
+    height: 100px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+/* Container for the form */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 40px;
+    padding-left: 400px;
+}
+
+/* Styling the form itself */
+form {
+    background-color: var(--snd-bg-color); /* Background matches secondary background color */
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    text-align: left;
+    color: var(--text-color); /* Text color using defined variable */
+}
+
+/* Label styling for each input */
+label {
+    margin-bottom: 10px;
+    margin: 10px;
+    font-size: 35px;
+    color: var(--text-color); /* Ensure labels are readable */
+    font-weight: bold;
+}
+
+/* Input fields, dropdowns, and buttons have similar styling */
+input, select {
+    width: 100%; /* Full width for form elements */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    background-color: var(--bg-color); /* Background matches main background */
+    color: var(--text-color); /* Text color using defined variable */
+}
+
+/* Button for form submission */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color); /* Button matches main color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #557acc; /* Slightly darker shade for hover */
+}
+
+/* Additional styling for dropdowns (select elements) */
+select {
+    appearance: none; /* Removes default browser arrow */
+    background-color: var(--bg-color); /* Same background as input */
+    color: var(--text-color); /* Same text color */
+    font-size: 25px;
+    padding-right: 30px; /* Space for custom arrow */
+    position: relative;
+}
+
+/* Custom arrow for dropdown (select) */
+select:after {
+    content: '▼'; /* Custom arrow symbol */
+    color: var(--text-color); /* Color for the arrow */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+

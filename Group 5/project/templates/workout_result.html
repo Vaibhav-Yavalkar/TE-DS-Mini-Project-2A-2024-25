@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Workout Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='diet.css') }}">
+    <style>
+        :root {
+            --bg-color: #000;
+            --snd-bg-color: #111;
+            --text-color: #fff;
+            --main-color: #6699ff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        h1 {
+            color: var(--main-color);
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .day-label {
+            color: var(--text-color);
+            text-align: center;
+            margin: 50px 0 20px 0;
+            font-size: 28px;
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 10px;
+        }
+
+        .meal-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .dish-card {
+            background-color: var(--snd-bg-color);
+            border: 1px solid var(--main-color);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .dish-card:hover {
+            transform: scale(1.05);
+        }
+
+        .exercise-name {
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .exercise-info {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .dropdown {
+            cursor: pointer;
+            margin-top: 15px;
+            color: var(--main-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            margin-top: 15px;
+            text-align: left;
+            background-color: var(--snd-bg-color);
+            padding: 15px;
+            border-radius: 15px;
+            color: var(--text-color);
+        }
+
+        .dropdown-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Personalized Workout Plan</h1>
+
+    {% for day, exercises in workout_plan.items() %}
+        <h2 class="day-label">{{ day }}</h2>
+        <div class="meal-info">
+            {% if exercises %}
+                {% for exercise in exercises %}
+                    <div class="dish-card">
+                        <div class="exercise-name">{{ exercise['exercise'] }}</div>
+                        <div class="exercise-info">
+                            <span>Reps: {{ exercise['reps'] }}</span> |
+                            <span> Sets: {{ exercise['sets'] }}</span> |
+                            
+                        </div>
+                        <div class="dropdown" onclick="toggleDropdown(this)">
+                            <span>View GIF & Instructions</span>
+                            <span>▼</span>
+                        </div>
+                        <div class="dropdown-content">
+                            <img src="{{ exercise['gifs'] }}" alt="{{ exercise['exercise'] }} gif">
+
+                            <p><strong>Instructions:</strong><br>
+                                {% for instruction in exercise['instructions'].split('\n') %}
+                                    {{ instruction }}<br> <!-- Adding extra space between each point -->
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>REST DAY</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <script>
+        function toggleDropdown(element) {
+            const dropdownContent = element.nextElementSibling;
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
