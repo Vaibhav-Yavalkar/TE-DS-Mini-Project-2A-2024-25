@@ -1,0 +1,396 @@
+body{
+    background-color: #232946;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ********************************Navbar*************************************** */
+
+
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Logo */
+.nav-logo{
+    height: 150px;
+    width:200px;
+    background-color: transparent;
+    margin-bottom: 1px;
+}
+
+.logo-a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 1px;
+}
+
+.logo-space{
+    width: 200px;
+    height:150px;
+    background-color: transparent ;
+    margin-bottom: 1px;
+}
+
+.logo{
+    height: 150px;
+    width: 200px;
+    margin-bottom: 1px;
+}
+
+.top-logo{
+    height: 150px;
+    width: 200px;
+    margin-bottom: 1px;
+}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color:transparent;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 900px;
+    
+}
+
+.username {
+    color: #fff;
+    margin-right: 10px;
+    height:150px;
+    width:200px;
+    margin-top: 50px;
+    align-self:auto;
+    transform: translate(950px, 20px);
+    font-size: large;
+  }
+
+/*********************   video page   ************************************/
+ 
+ .main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: soft-light;
+    
+ }
+
+
+
+/* middle title */
+
+.title{
+     margin-bottom: 150px;
+}
+
+.title h1{
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+   
+}
+.title h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent
+
+}
+
+.title h2{
+    font-size: 50px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: -110px;
+
+}
+
+.title h4{
+    font-size: 30px;
+    color: white;
+    margin-left: 95px;
+    margin-top: -80px;
+    
+}
+
+
+.title a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 350px;
+    background-color: transparent;
+}
+
+
+/* video */
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/**************** Photos and Image Page  **********************************/
+
+.main2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+
+ /* middle quote */
+ .quote{
+    margin-left: 50px;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.quote:hover{
+    transform: scale(1.1);
+}
+
+ #one{
+    font-size: 50px;
+    color: white;
+    margin-right: 200px
+
+ }
+
+ #two{
+    font-size: 50px;
+    color: white;
+    margin-top: -70px;
+
+ }
+
+/* left image */
+ .exerbox{
+    margin-right: 50px;
+    margin-top: 90px;
+    justify-content: center;
+    display: flex;
+    transition: all 0.5s;
+ }
+
+ .exerbox:hover{
+    transform: scale(1.1);
+ }
+
+ .exercise{
+    width: 480px;
+    height:300px;
+    border-radius: 10%;
+ }
+
+ 
+ /* right image */
+.peabox{
+    margin-top: 90px;
+    transition: all 0.5s;
+ }
+
+ .peabox:hover{
+    transform: scale(1.1);
+ }
+
+ .peace{
+    width: 480px;
+    height: 300px;
+    border-radius: 10%;
+
+ }
+
+
+
+ /****************************Main feature page************************************/
+
+ .main3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+
+
+.box1{
+    border: 5px solid white;
+    background-image: url('../images/moodtrack.png');
+    background-size: cover;
+    height: 380px;
+    width: 445px;
+    border-radius: 15%;
+    filter: drop-shadow(0 0 8px white);
+    transition: all 0.5s;
+}
+
+.box1:hover{
+    transform: scale(1.1);
+}
+
+.box1 h4{
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.box2{
+    border: 5px solid white;
+    background-image: url('../images/moodgraph.png');
+    background-size: cover;
+    height: 380px;
+    width: 445px;
+    border-radius: 15%;
+    filter: drop-shadow(0 0 8px white);
+    transition: all 0.5s;
+}
+
+.box2:hover{
+    transform: scale(1.1);
+}
+
+.box2 h4{
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.main4{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box3{
+    border: 5px solid white;
+    background-image: url('../images/chatbot.png');
+    background-size: cover;
+    height: 380px;
+    width: 445px;
+    border-radius: 15%;
+    filter: drop-shadow(0 0 8px white);
+    transition: all 0.5s;  
+}
+.box3:hover{
+    transform: scale(1.1);
+}
+
+.box3 h4{
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.box4{
+    border: 5px solid white;
+    background-image: url('../images/selfreflect\ \(1\).png');
+    background-size: cover;
+    height: 380px;
+    width: 445px;
+    border-radius: 15%;
+    filter: drop-shadow(0 0 8px white);
+    transition: all 0.5s;
+}
+.box4:hover{
+    transform: scale(1.1);
+}
+
+.box4 h4{
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+/* *****************************************footer****************************************** */
+
+.footer{
+    margin-top: 15%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.left{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    margin-right: 550px;
+    display: block;
+}
+
+.image{
+    width: 150px;
+    height: 90px;
+    background-color: transparent;
+}
+
+.text{
+    width: 250px;
+    height: 80px;
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: justify;
+    font-family: Inter-Regular, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;;
+    
+}
+.text h6{
+    margin-bottom: 60px;
+    font-family: Inter-Regular, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;;
+}
+
+.content{
+    width: 300px;
+    height: 300px;
+}

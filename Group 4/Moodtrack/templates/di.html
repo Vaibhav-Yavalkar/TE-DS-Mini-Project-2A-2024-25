@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Reflection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e2a47;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: #243254;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="text"], textarea, input[type="date"], input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+
+        input[type="text"]::placeholder, textarea::placeholder {
+            color: #ff6347;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .current-time {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Self-Reflection</h1>
+        
+        <!-- Add form and POST method -->
+        <form method="POST" action="{{ url_for('diary_entry') }}">
+            <label for="entry-title">Entry Title</label>
+            <input type="text" id="entry-title" name="entry_title" placeholder="Name of entry ✏" required>
+            
+            <label for="entry-date">Date</label>
+            <input type="date" id="entry-date" name="entry_date" required>
+            
+            <label for="entry-time">Time</label>
+            <input type="time" id="entry-time" name="entry_time" required>
+            
+            <label for="entry-text">Today's Entry</label>
+            <textarea id="entry-text" name="entry_text" rows="10" placeholder="What's on your mind today? 💭" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="current-time" id="current-time"></div>
+    </div>
+
+    <script>
+        // Function to update the current date and time
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const formattedTime = hours + ':' + minutes + ':' + seconds;
+            const currentTimeElement = document.getElementById('current-time');
+            currentTimeElement.textContent = 'Current Time: ' + formattedTime;
+        }
+    
+        // Update time every second
+        setInterval(updateTime, 1000);
+        // Initialize time on page load
+        updateTime();
+    </script>
+</body>
+</html>

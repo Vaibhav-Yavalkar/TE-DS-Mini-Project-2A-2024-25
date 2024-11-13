@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTracker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <script>
+        // Function to validate the login form
+        function validateLoginForm() {
+            // Get the input values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Clear previous error messages
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.innerHTML = '';
+
+            // Email validation regex
+            const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
+
+            // Check if email and password fields are filled
+            if (!email || !password) {
+                errorMessage.innerHTML = 'Please fill in both fields.';
+                return false;  // Prevent form submission
+            }
+
+            // Check if email format is valid
+            if (!emailPattern.test(email)) {
+                errorMessage.innerHTML = 'Please enter a valid email address.';
+                return false;  // Prevent form submission
+            }
+
+            return true;  // Allow form submission if everything is valid
+        }
+
+        // Function to toggle password visibility
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.querySelector('.toggle-password');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.innerHTML = '&#128065;';  // Eye icon open
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.innerHTML = '&#128065;';  // Eye icon closed
+            }
+        }
+
+        // Add event listener for DOMContentLoaded to ensure the script works after loading the page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.toggle-password').addEventListener('click', togglePassword);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" method="POST" action="{{ url_for('login') }}" onsubmit="return validateLoginForm();">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password">&#128065;</span>
+            </div>
+            <!-- Error message display -->
+            <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+            
+            <div class="signup">
+                <a href="{{ url_for('signup') }}">Don't have an account? Sign Up</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
