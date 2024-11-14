@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #232946;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Chart layout */
+.chart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mood bar section */
+.bar {
+    width: 40px;
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar span {
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+
+.bar div {
+    width: 100%;
+    height: 100px;
+    background-color: #f0ad4e; /* Default color for neutral mood */
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Mood colors */
+.mood-happy {
+    background-color: #5cb85c;
+}
+
+.mood-neutral {
+    background-color: #f0ad4e;
+}
+
+.mood-sad {
+    background-color: #d9534f;
+}
+
+.mood-excellent {
+    background-color: #5bc0de;
+    position: relative;
+}
+
+.mood-excellent::after {
+    content: '★';
+    color: gold;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Emoji labels */
+.emoji-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.emoji-labels div {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Emoji sizes */
+.emoji-smile {
+    color: #5cb85c;
+}
+
+.emoji-neutral {
+    color: #f0ad4e;
+}
+
+.emoji-sad {
+    color: #d9534f;
+}

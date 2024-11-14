@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #232946;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: white;
+        }
+
+        .input-box {
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #c8cc4e;
+            border-radius: 10px;
+            width: 50%;
+            background-color: #f4f4f9;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #c8cc4e;
+            box-sizing: border-box;
+            background-color: #e0e1dd;
+            color: black;
+        }
+        button {
+            background-color: #c8cc4e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: hsl(71, 49%, 43%);
+        }
+        .recommendation-box {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 20px auto;
+            width: 50%;
+            color: black;
+        }
+        .recommendation-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recommendation-box ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey! How are you feeling today? 🤔</h1>
+    <p>Let us help you fix your mood! Share your feelings with us, and we'll provide some recommendations. 😊</p>
+
+    <div class="input-box">
+        <form id="classifyForm">
+            <label for="text_input">Describe your current mood:</label><br>
+            <textarea id="text_input" name="text_input" placeholder="PLease enter a descriptive text for us to be precise 📝..."></textarea><br><br>
+            <button type="submit">Let's see! 🔍</button>
+        </form>
+        <div id="response" style="margin-top: 20px;"></div>
+    </div>
+
+    <!-- JavaScript to handle form submission asynchronously -->
+    <script>
+        document.getElementById('classifyForm').onsubmit = function (e) {
+            e.preventDefault();  // Prevent the traditional form submission
+
+            const inputText = document.querySelector('textarea[name="text_input"]').value;
+
+            // Make an asynchronous request to the Flask backend
+            fetch('/detect_emotion', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ input_text: inputText }),  // Send the input text as JSON
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the page dynamically with the received data
+                const responseDiv = document.getElementById('response');
+                responseDiv.innerHTML = `<h2 style="color: black;">Seems like you are feeling: ${data.emotion} 🎭</h2>`;
+
+                // Display movie recommendations
+                let moviesHTML = '<h2>Movie Recommendations 🎬</h2><ul>';
+                data.movies.forEach(movie => {
+                    moviesHTML += `<li>🎥 ${movie}</li>`;
+                });
+                moviesHTML += '</ul>';
+                responseDiv.innerHTML += `<div class="recommendation-box">${moviesHTML}</div>`;
+
+                // Display music recommendations
+                let musicHTML = '<h2>Music Recommendations 🎶</h2><ul>';
+                data.music.forEach(song => {
+                    musicHTML += `<li>🎵 ${song}</li>`;
+                });
+                musicHTML += '</ul>';
+                responseDiv.innerHTML += `<div class="recommendation-box">${musicHTML}</div>`;
+
+                // Display exercise recommendations
+                let exercisesHTML = '<h2>Exercise Recommendations 🏋️‍♂️</h2><ul>';
+                data.exercises.forEach(exercise => {
+                    exercisesHTML += `<li>🏃 ${exercise}</li>`;
+                });
+                exercisesHTML += '</ul>';
+                responseDiv.innerHTML += `<div class="recommendation-box">${exercisesHTML}</div>`;
+            })
+            .catch(error => {
+                document.getElementById('response').innerText = 'Oops! Something went wrong. Please try again. 😞';
+                console.error('Error:', error);
+            });
+        };
+
+    </script>
+</body>
+</html>

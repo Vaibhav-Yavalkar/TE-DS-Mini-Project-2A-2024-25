@@ -1,0 +1,134 @@
+*{
+    font-family:arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232946;
+}
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: transparent;
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+    background-color: transparent;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: white;
+    
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 14px;
+    
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:  #596490;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:  #596490;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white
+}
+
+.name{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color:  #232946;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background:  #596490;
+}
+
+.swiper-navBtn{
+    color:antiquewhite;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: white;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: white;
+}

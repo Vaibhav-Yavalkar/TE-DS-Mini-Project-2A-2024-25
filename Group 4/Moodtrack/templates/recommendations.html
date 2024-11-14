@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Keep the same background color */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .recommendation-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 20px auto;
+            width: 50%;
+        }
+        h2 {
+            color: #4caf50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Your Mood: {{ recommendations['emotion'] }}</h1>
+
+    <div class="recommendation-box">
+        <h2>Movie Recommendation</h2>
+        <p>{{ recommendations['movies'] }}</p>
+    </div>
+
+    <div class="recommendation-box">
+        <h2>Music Recommendation</h2>
+        <p>{{ recommendations['music'] }}</p>
+    </div>
+
+    <div class="recommendation-box">
+        <h2>Exercise Recommendation</h2>
+        <p>{{ recommendations['exercises'] }}</p>
+    </div>
+
+    <a href="/">Back to Home</a>
+
+</body>
+</html>
