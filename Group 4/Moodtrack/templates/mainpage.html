@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="mainpage.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mainpage.css') }}">
+</head>
+<body>
+
+<!--******************************Navbar****************************-->
+
+  <header>
+    <div class="navbar">
+        <div class="nav-logo">
+          <a  href="#" class="logo-a">
+            <div class="logo-space">
+              <div class="logo">
+                <img src= "{{ url_for('static', filename='images/logof.png') }}" alt="Image" class="top-logo">
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        
+          {% if session.get('loggedin') %}
+              <span class="username">Welcome, {{ username }}!</span>
+              <button type="button" onclick="window.location.href='{{ url_for('logout') }}'">Logout</button>
+          {% else %}
+              <button type="button" onclick="window.location.href='{{ url_for('login') }}'">Login</button>
+          {% endif %}
+        
+    </div>
+  </header>
+
+<!-- *********************   video page   ********************* -->
+ 
+    <div class="main">
+
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="{{ url_for('static', filename='videos/video2.mp4') }}" type="video/mp4">
+      </video>
+
+       
+        
+       
+       <div class="title">
+        <h2>We Are</h2>
+        <h1>MoodTracker</h1>
+        <h4>A mental health movement that is worth breaking time for</h4>
+        <a href="#">Scroll</a>
+       </div>
+   </div>
+
+   <!-- /**************** Photos and Image Page  ************************/ -->
+
+   <div class="main2">
+
+      <div class="exerbox">
+        <img src="{{ url_for('static', filename='images/exercise.jpg') }}" alt="Image" class="exercise" >
+      </div>
+
+      <div class="quote">
+        <p id="one">Be Better</p><br>
+        <p id="two">Be Stronger</p>
+      </div>
+
+      <div class="peabox">
+        <img src="{{ url_for('static', filename='images/peace.jpg') }}" alt="Image" class="peace" >
+      </div>
+      
+    </div>
+
+  
+   <!--**********************************main feature page***********************-->   
+      
+   <div class="main3">
+
+      <div class="box1" onclick="openMoodTracker()">
+          <h4>Moodtracker</h4>
+       </div>
+
+       <div class="box2" onclick="window.location.href='{{ url_for('moodgraph') }}'">
+        <h4>MoodGraph</h4>
+    </div>
+    
+
+    </div>
+
+    <div class="main4">
+
+      <div class="box3" onclick="window.location.href='{{ url_for('chatbot') }}'">
+        <h4>Chatbot</h4>
+       </div>
+        
+       <div class="box4" onclick="open_diary()">
+        <h4>Self-Reflection</h4>
+       </div>
+
+    </div>
+
+
+<!-- **************************footer******************************** -->
+
+<div class="footer">
+  <div class="left">
+    <div class="image">
+      <img src="{{ url_for('static', filename='images/logof.png') }}" alt="Image" class="top-logo">
+    </div>
+
+    <div class="text">
+      <h6>At moodtracker, we track your mood, help you to make it better, keep your mental health clean.#BeBetterBeStronger</h6>
+    </div>
+  </div>
+ 
+
+  <div class="content">
+
+  </div>
+
+</div>
+    
+    
+<script>
+  
+  function redirectToChatbot() {
+            window.location.href = '/chatbot_page';  // Redirect to the chatbot_page route
+        }
+  function openMoodTracker() {
+    window.location.href = '{{ url_for("moodtracker") }}';
+  }
+
+  function open_diary() {
+  {% if session.get('loggedin') %}
+    window.location.href = '/diary';
+  {% else %}
+    window.location.href = '/login';
+  {% endif %}
+}
+</script>
+
+</body>
+
+
+</html>

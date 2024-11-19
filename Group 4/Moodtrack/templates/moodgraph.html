@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Graph</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/moodgraph.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Your Mood Graph</h2>
+        <canvas id="moodBarGraph" width="400" height="200"></canvas>
+        <canvas id="moodLineGraph" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Hidden elements to hold JSON data -->
+    <script id="emotions" type="application/json">{{ emotions | tojson }}</script>
+    <script id="timestamps" type="application/json">{{ timestamps | tojson }}</script>
+
+    <script src="{{ url_for('static', filename='js/moodgraph.js') }}"></script>
+</body>
+</html>
