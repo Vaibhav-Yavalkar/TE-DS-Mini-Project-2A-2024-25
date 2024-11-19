@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Value Estimator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        form {
+            padding: 20px 0;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .property-type-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .property-type {
+            flex: 1;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .property-type img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .property-type span {
+            font-size: 1.1em;
+        }
+
+        .property-type:hover,
+        .property-type.selected {
+            background-color: #ff6b6b;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .bhk-options,
+        .bath-options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bhk-options label,
+        .bath-options label {
+            flex: 1;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .bhk-options input[type="radio"],
+        .bath-options input[type="radio"] {
+            display: none;
+        }
+
+        .bhk-options input[type="radio"]:checked + label,
+        .bath-options input[type="radio"]:checked + label {
+            background-color: #ff6b6b;
+            color: white;
+            border-color: #007bff;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Future Value Of Your Property</h1>
+        <p>Discover your property's future value </p>
+        <form method="post" action="/estimate_future"> <!-- Change action to /estimate_future -->
+    <!-- Locality Input -->
+    <label for="projectLocality">Project/Locality</label>
+    <input type="text" id="projectLocality" name="projectLocality" placeholder="Enter your Location Here..." value="{{ locality }}" >
+
+    <!-- Property Type Selection -->
+    <div class="property-type-container">
+        <div class="property-type flat" onclick="selectPropertyType('flat')">
+            <input type="radio" id="flat" name="propertyType" value="flat" required>
+            <img src="static/images/flat.png" alt="Flat">
+            <span>Flat</span>
+        </div>
+
+        <div class="property-type house-villa" onclick="selectPropertyType('house-villa')">
+            <input type="radio" id="house-villa" name="propertyType" value="house-villa" required>
+            <img src="static/images/house-villa.png" alt="House/Villa">
+            <span>House/Villa</span>
+        </div>
+
+        <div class="property-type builder-floor" onclick="selectPropertyType('builder-floor')">
+            <input type="radio" id="builder-floor" name="propertyType" value="builder-floor" required>
+            <img src="static/images/plot.png" alt="Builder Floor">
+            <span>Plot</span>
+        </div>
+    </div>
+
+    <!-- BHK Selection -->
+    <label>BHK</label>
+    <div class="bhk-options">
+        <input type="radio" id="1bhk" name="bhk" value="1" required>
+        <label for="1bhk">1 BHK</label>
+        <input type="radio" id="2bhk" name="bhk" value="2" required>
+        <label for="2bhk">2 BHK</label>
+        <input type="radio" id="3bhk" name="bhk" value="3" required>
+        <label for="3bhk">3 BHK</label>
+        <input type="radio" id="4bhk" name="bhk" value="4">
+        <label for="4bhk">4 BHK</label>
+        <input type="radio" id="5bhk" name="bhk" value="5">
+        <label for="5bhk">5 BHK</label>
+    </div>
+
+    <!-- Bath Selection -->
+    <label>Bath</label>
+    <div class="bath-options">
+        <input type="radio" id="1bath" name="bath" value="1" required>
+        <label for="1bath">1 Bath</label>
+        <input type="radio" id="2bath" name="bath" value="2" required>
+        <label for="2bath">2 Bath</label>
+        <input type="radio" id="3bath" name="bath" value="3">
+        <label for="3bath">3 Bath</label>
+    </div>
+
+    <!-- Super Area Input -->
+    <label for="superArea">Super Area</label>
+    <input type="number" id="superArea" name="superArea" placeholder="Enter Sq ft" required>
+
+    <!-- Submit Button -->
+    <button type="submit">Get Future Value</button>
+
+</form>
+
+    </div>
+
+    <script>
+        // JavaScript to handle the selection of property types
+        function selectPropertyType(type) {
+            const propertyTypes = document.querySelectorAll('.property-type');
+            propertyTypes.forEach(typeDiv => {
+                typeDiv.classList.remove('selected');
+            });
+            document.querySelector('.' + type).classList.add('selected');
+        }
+    </script>
+</body>
+</html>

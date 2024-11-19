@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image:url('static/images/maxresdefault.jpg');
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .result {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        strong {
+            color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Prediction Results</h1>
+
+        <p><strong>Project/Locality:</strong> {{ project_locality }}</p>
+        <p><strong>Property Type:</strong> {{ property_type }}</p>
+        <p><strong>BHK:</strong> {{ bhk }}</p>
+        <p><strong>Super Area:</strong> {{ super_area }} sq ft</p>
+
+        <div class="result">
+            <h2>Estimated Price: {{ predicted_price }}</h2>
+        </div>
+    </div>
+
+</body>
+</html>

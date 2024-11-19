@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Property Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .info-panel {
+            background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+            url('static/images/img.png');
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            padding: 40px;
+            color: white;
+        }
+        .info-panel h1,
+.info-panel ul {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-panel ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional */
+    color: black; /* Optional */
+}
+        .login-panel {
+            background-color: white;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .login-panel .login-box {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .login-box label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .login-box input[type="radio"] {
+            margin-right: 10px;
+        }
+        .login-box input[type="text"],
+        .login-box input[type="email"],
+        .login-box input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-box button:hover {
+            background-color: #e60000;
+        }
+        .login-box .signup-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .login-box .signup-link a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Information Panel -->
+        <div class="info-panel">
+            <h1>Things you Can Do with HOUSY Account</h1>
+            <ul>
+                <li>Look for Properties overall Banglore</li>
+                <li>Accurate Estimation of Property</li>
+                <li>Be a Housy Buyer</li>
+                <li>Be a Housy Agent/Builder</li>
+                <li>Get instant queries over Phone, Email and SMS</li>
+                <li>Add detailed property information & multiple photos per listing</li>
+            </ul>
+        </div>
+
+        <!-- Login Panel -->
+        <div class="login-panel">
+            <div class="login-box">
+                <h2>Login</h2>
+                <label>Are you</label>
+                <label>
+                    <input type="radio" name="userType" value="buyer"> Buyer/Owner
+                </label>
+                <label>
+                    <input type="radio" name="userType" value="agent"> Agent/Builder
+                </label>
+                <input type="tel" placeholder="Enter Mobile No." required>
+                <button>Login</button>
+                <div class="signup-link">
+                    New to HOUSY? <a href="/signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
