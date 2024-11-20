@@ -1,0 +1,35 @@
+{% extends "admin_users/_base.html" %}
+
+
+{% block main %}
+
+<div class="mycontainer group/container">
+    <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">Applications</h1>
+
+    <!-- Application list -->
+    <div class="flex flex-col gap-4 py-8">
+        <div class="group/card flex w-full gap-1 px-4 py-2 rounded-md ">
+            <span class=" text-slate-400 flex-[2] ">Email</span>
+            <span class="text-slate-400 flex-[2] ">Name</span>
+            <span class="text-slate-400 flex-[2] ">Position</span>
+            <span class=" text-slate-400 flex-[1]">Action</span>
+        </div>
+        {% for account in account_list %}
+        <div class="group/card flex w-full gap-1 p-4 rounded-md border duration-300">
+            <span class=" text-slate-500 flex-[2]">{{account.email}}</span>
+            <span class=" text-slate-500 flex-[2]">{{account.full_name}}</span>
+            <span class=" text-slate-500 flex-[2]">{{account.user_type}}</span>
+
+            <span class=" text-slate-500 flex-[1]">
+                <a href="{% url "verified_accounts" account_id=account.id %}" class="btn-primary">
+                    Unverify
+                </a>
+            </span>
+
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock main %}

@@ -1,0 +1,38 @@
+<div class="mycontainer group/container flex flex-col items-start border-t border-slate-300">
+</form>
+    <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">Comments</h1>
+    <form method="post" class="flex w-full mt-4 gap-4 ">
+        {% csrf_token %}
+        <!-- <textarea name="" id="" rows="2" class="w-full regular-input"></textarea> -->
+        <input type="text" name="message" class="regular-input w-full" placeholder="Add a comment">
+        <button type="submit" name="add_comment" class="btn-primary">COMMENT</button>
+    </form>
+
+    <div class="mt-4 w-full">
+        {% for comment in comment_list %}
+        <div class="border-b w-full max-w-[50%] py-4">
+            <div class="flex items-center gap-2">
+                <span class="text-slate-700">{{comment.user.full_name}}</span>
+
+                <span class="text-xs p-[2px] rounded 
+                    {% if comment.user.user_type == "INSTRUCTOR" %} !text-purple-600 border-purple-600
+                    {% elif comment.user.user_type == "STAFF" %} !text-blue-600 border-blue-600
+                    {% elif comment.user.user_type == "COMMITTEE_MEMBER" %} !text-orange-600 border-orange-600
+                    {% elif comment.user.user_type == "ADMIN" %} text-red-600 border-orange-600
+                    {% else %} !text-slate-400 
+                    {% endif %} ">
+                    {{comment.user.user_type}}
+                </span>
+
+                <span class="text-sm !text-slate-400">•</span>
+                <span class="text-xs !text-slate-400">{{comment.date}}</span>
+            </div>
+            <p class="text-slate-900 p-2">
+                {{comment.message}}
+            </p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>

@@ -1,0 +1,157 @@
+{% extends "admin_users/_base.html" %}
+
+
+{% block main %}
+<div class="flex flex-col lg:flex-row">
+
+    <form method="post" class="mycontainer group/container flex flex-col gap-4 items-start flex-1">
+        {% csrf_token %}
+        <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">Details</h1>
+        <div class="w-full flex gap-4 items-center">
+            <span class=" text-sm font-medium min-w-[15ch] text-slate-500">Name</span>
+            <span class="text-slate-900">{{application.user.full_name}}</span>
+        </div> 
+        <div class="w-full flex gap-4 items-center">
+            <span class=" text-sm font-medium min-w-[15ch] text-slate-500">Email</span>
+            <span class="text-slate-900">{{application.user.email}}</span>
+        </div>    
+        <div class="w-full flex gap-4 items-center">
+            <label class="text-sm font-medium min-w-[15ch] text-slate-500">Course</label>
+            <span class="text-slate-900">{{application.course}}</span>
+        </div>
+        <div class="w-full flex gap-4">
+            <label class="text-sm font-medium min-w-[15ch] text-slate-500">Message</label>
+            <p class="inline-block text-slate-900 border p-4 rounded-md">{{application.message}}</p>
+        </div>
+
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">CV</label>
+            <a href="{{application.cv1.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% if application.cv2 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">CV2</label>
+            <a href="{{application.cv2.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        {% if application.cv3 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">CV3</label>
+            <a href="{{application.cv3.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        {% if application.cv4 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">CV4</label>
+            <a href="{{application.cv4.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+
+        <!-- Certificates-->
+        {% if application.certificate1 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">Certificate1</label>
+            <a href="{{application.certificate1.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        {% if application.certificate2%}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">Certificate2</label>
+            <a href="{{application.certificate2.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        {% if application.certificate3 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">Certificate3</label>
+            <a href="{{application.certificate3.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        {% if application.certificate4 %}
+        <div class="w-full mt-4 flex gap-4 items-center">
+            <label class="text-sm font-medium w-[15ch] text-slate-500">Certificate4</label>
+            <a href="{{application.certificate4.url}}" class="inline-block btn-secondary">VIEW</a>
+        </div>
+        {% endif %}
+        <div>
+
+        <h1 class="text-slate-500">Committee members voting for selection</h1>
+            <div class="flex gap-4">
+                <p class="text-emerald-500 rounded-md">{{application.approved_by.count}} Approved</p>
+                <p class="text-rose-500 rounded-md">{{application.disapproved_by.count}} Disapproved</p>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="text-slate-500">What instructors think about this assistant</h1>
+            <div class="flex gap-4">
+                <p class="text-emerald-500 rounded-md">{{application.approved_by.count}} <i class="fa-solid fa-thumbs-up"></i></p>
+                <p class="text-rose-500 rounded-md">{{application.disapproved_by.count}} <i class="fa-solid fa-thumbs-down"></i></p>
+            </div>
+        </div>
+
+    </form>
+
+    <!-- Checklist-->
+    <form method="post" class="px-8 py-4 lg:py-8 group/container flex flex-col items-start flex-1">
+        {% csrf_token %}
+        <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">AI Summary</h1>
+
+
+
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Name: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_name}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Designation: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_designation}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Location: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_location}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Email Address: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_email}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Degree: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_degree}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">College Name: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_collage}}</span>
+        </div>
+        <div class="flex gap-2 pt-4">
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">Skills: </span>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-700">{{application.summary_skills}}</span>
+        </div>
+    </form>
+    
+    <!-- Checklist-->
+    <form method="post" class="mycontainer group/container flex flex-col items-start flex-1">
+        {% csrf_token %}
+        <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">Checklist</h1>
+
+        <p class="mt-4 font-semibold">{{completion_percentage}}%</p>
+        <div class="flex border w-full h-4">
+            {% for title, status in checklist.items %}
+                {% if status %}
+                <div class="w-[12.5%] h-4 bg-green-500"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        {% for title, status in checklist.items %}
+        <div class="flex gap-2 pt-4">
+            <input type="checkbox" id="{{title}}" name="box{{forloop.counter}}" {% if status %} checked {% endif %}>
+            <label for="{{title}}" class="font-medium min-w-[15ch] text-slate-500">{{title}}</span>
+        </div>
+        {% endfor %}
+    </form>
+</div> 
+
+<!-- Comments -->
+{% include "components/comments.html" %}
+
+{% endblock main %}

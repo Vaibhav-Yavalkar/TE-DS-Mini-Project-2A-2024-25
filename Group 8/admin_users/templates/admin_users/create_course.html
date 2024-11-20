@@ -1,0 +1,22 @@
+{% extends "admin_users/_base.html" %}
+
+
+{% block main %}
+
+<div class="mycontainer group/container">
+    <h1 class="fancy-headline relative mb-4 justify-start inline-block text-slate-700 text-2xl font-medium">Applications</h1>
+    <form method="post" class="flex flex-col gap-4">
+        {% csrf_token %}
+        <div>
+            <p class="text-slate-700">Position</p>
+            {{form.position}}
+        </div>
+        <div>
+            <p class="text-slate-700">Desription</p>
+            {{form.description}}
+        </div>
+        <button class="btn-primary self-start">Save</button>
+    </form>
+</div>
+
+{% endblock main %}

@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+
+{% load static %}
+
+{% block main %}
+<style>
+</style>
+<div class="relative flex flex-col items-center justify-center h-full !min-h-[90vh] py-8 px-4 sm:px-8">
+    <img src="{% static "images/careers.jpg" %}" alt="" class="absolute object-cover w-full h-full top-0 left-0 -z-10 brightness-[.3]">
+    <h1 class="text-white drop-shadow-lg text-4xl text-center">Join Our Team as a Teaching Assistant at Florida Atlantic University</h1>
+    <p class="my-4 text-center w-full sm:max-w-3/4 text-white drop-shadow-lg">Explore exciting opportunities to contribute to academic excellence! We're seeking dedicated individuals passionate about education to join us as Teaching Assistants at North University. Shape the future of learning and inspire students on their educational journey. Apply now to be a part of our dynamic team!</p>
+</div>
+
+<div class="mycontainer group/container">
+    <h1 class="fancy-headline relative inline-block text-slate-700 text-2xl font-medium">Open Positions</h1>
+    <div class="flex flex-wrap gap-8 py-8">
+        {% for course in course_list %}
+        <a href="{% url "course" course_id=course.id %}" class="group/card flex flex-col w-full lg:w-[30%] gap-5 p-8 rounded-xl border hover:bg-brand hover:shadow-xl duration-500">
+            <span class="text-2xl text-slate-700 font-medium group-hover/card:text-white">{{course.position}}</span>
+            <span href="" class=" group-hover/card:text-white text-slate-700">Apply Now <i class="ml-0 text-brand group-hover/card:ml-2 group-hover/card:text-white fa-solid fa-arrow-right duration-500"></i></span>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock main %}

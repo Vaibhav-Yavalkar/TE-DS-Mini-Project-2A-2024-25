@@ -1,0 +1,25 @@
+{% load compress %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind CSS -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+
+</head>
+
+<body class="h-[100vh] flex flex-col gap-4 justify-center items-center">
+
+    <h1 class="text-2xl text-slate-700">Sorry, Your account has not been approved by the admin yet.</h1> 
+    <a href="/" class="btn-primary">Retry</a>
+
+</body>
+</html>

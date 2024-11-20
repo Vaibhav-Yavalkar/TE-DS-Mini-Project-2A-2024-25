@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+
+
+{% block main %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="pt-6">
+        <label for="email" class="block text-sm font-medium leading-6 text-slate-700">Class Name</label>
+        <div class="mt-1">
+            <input type="text" class="regular-input" name="class-name" required>
+        </div>
+    </div>
+</form>
+
+
+{% endblock main %}
