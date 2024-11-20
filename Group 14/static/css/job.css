@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+}
+
+.transparent-frame {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 30%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.804);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    text-align: center;
+}
+
+.transparent-frame h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+.form-group label {
+    color: white;
+    margin-bottom:5px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2px;
+    align-items: left;
+}
+
+.textbox, .dropdown {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: left;
+}
+
+option {
+    background-color: black;
+    color: white;
+}
+
+.dropdown {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: left;
+    width: 99%;
+}
+
+.textbox::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+
+.note {
+    color: #ff0;
+    font-size: 0.9em;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5300;
+}
+
+
+
+
