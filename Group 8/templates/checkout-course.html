@@ -1,0 +1,110 @@
+{% extends "_base.html" %}
+
+
+{% block main %}
+
+<!-- component -->
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+
+
+<!-- <div class="mycontainer flex flex-col gap-4 items-center"> -->
+<div class="mycontainer group/container flex flex-col justify-between gap-12 sm:gap-24 sm:flex-row flex-1 overflow-hidden px-8 lg:px-16 pb-8 lg:pb-16">
+    <!-- Service Name-->
+    <div class="group flex flex-col items-start">
+        <h1 class="fancy-headline inline-block relative text-5xl mb-2 font-semibold text-slate-700">
+            {{course.position}}
+        </h1>
+        <!-- Discription -->
+        <p class="text-slate-700 pt-4">
+            {{course.description|safe}}
+        </p>
+    </div>
+    <form method="post" class=" sm:max-w-[40%] rounded-xl flex flex-col gap-8" enctype="multipart/form-data">
+        {% csrf_token %}
+            <h1 class="text-xl mb-2 font-semibold text-slate-700">
+                Send your application.
+            </h1>
+            <!-- Postition -->
+                {{form.course}} <!-- Hidden -->
+            <!-- Resume -->
+            <div class="flex flex-col gap-4">
+                <label for="email" class="block mb text-sm font-medium text-gray-900">Attach your CV</label>
+
+                <div class="w-full [&_input]:!rounded-md">
+                    {{form.cv1}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="cv2">
+                    {{form.cv2}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="cv3">
+                    {{form.cv3}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="cv4">
+                    {{form.cv4}}
+                </div>
+                <button class="border-2 border-dashed p-2 rounded-md hover:bg-blue-50" id="addCvButton" onclick="addCv()" type="button">+</button>
+            </div>
+            
+            <!-- Certificate -->
+            <div class="flex flex-col gap-4">
+                <label for="brief" class="block mb-2 text-sm font-medium text-gray-900">Add Certificates</label>
+                <div class="w-full [&_input]:!rounded-md hidden" id="certificate1">
+                    {{form.certificate1}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="certificate2">
+                    {{form.certificate2}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="certificate3">
+                    {{form.certificate3}}
+                </div>
+                <div class="w-full [&_input]:!rounded-md hidden" id="certificate4">
+                    {{form.certificate4}}
+                </div>
+                <button class="border-2 border-dashed p-2 rounded-md hover:bg-blue-50" id="addCertificateButton" onclick="addCertificate()" type="button">+</button>
+            </div>
+            
+            <!-- Has experience -->
+            <div class="w-full">
+                <label for="full-name" class="block mb-2 text-sm font-medium text-gray-900">Do you have experience working as a TA at North University?</label>
+                {{form.has_experience}} <label for="id_has_experience">Yes</label>
+            </div>
+            <!-- message -->
+            <div class="w-full">
+                <label for="brief" class="block mb-2 text-sm font-medium text-gray-900">Why are you intrested?</label>
+                {{form.message}}
+            </div>
+            
+            <button class="btn-primary self-end">Submit</button>
+            
+        </form>
+</div>
+
+
+<script>
+    let revealedCv = 1;
+    let revealedCertificate = 0;
+
+    function addCv() {
+        let cvInput = document.getElementById(`cv${revealedCv+1}`);
+        cvInput.style.display = "block";
+        revealedCv += 1;
+        console.log(revealedCv);
+
+        if (revealedCv >= 4) {
+            let addCvButton = document.getElementById("addCvButton");
+            addCvButton.style.display = "none";
+        }
+    }
+    function addCertificate() {
+        let certificateInput = document.getElementById(`certificate${revealedCertificate+1}`);
+        certificateInput.style.display = "block";
+        revealedCertificate += 1;
+        console.log(revealedCertificate);
+        
+        if (revealedCertificate >= 4) {
+            let addCvButton = document.getElementById("addCertificateButton");
+            addCvButton.style.display = "none";
+        }
+    }
+</script>
+{% endblock main %}
