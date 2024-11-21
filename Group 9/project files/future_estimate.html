@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('static/images/maxresdefault.jpg');
+            background-size: cover;  /* Ensure the background image covers the entire viewport */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            backdrop-filter: blur(5px); /* Add a blur effect to the background */
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .result {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .future-estimate {
+            background-color: #4CAF50; /* Green background for future estimate */
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        strong {
+            color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Future Value Estimator</h1>
+
+        <p><strong>Project/Locality:</strong> {{ project_locality }}</p>
+        <p><strong>Property Type:</strong> {{ property_type }}</p>
+        <p><strong>BHK:</strong> {{ bhk }} BHK</p> <!-- Added BHK for clarity -->
+        <p><strong>Super Area:</strong> {{ super_area }} sq ft</p>
+
+        <div class="future-estimate">
+            <h2>Future Estimated Price: <br> ₹{{ future_price  }}</h2> <!-- Added rounding for currency formatting -->
+        </div>
+    </div>
+
+</body>
+</html>
