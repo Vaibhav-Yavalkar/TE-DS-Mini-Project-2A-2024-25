@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Finance Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='incexpstyle.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Digi Finance</h1>
+        <h3>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Logout</a></li>
+            </ul>
+        </h3>
+    </header>
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><form action="{{ url_for('incexp') }}" method="POST">
+                <button type="submit" class="nav-button">Income Expense</button>
+            </form></li>
+            <li><form action="{{ url_for('set_budget') }}" method="POST">
+                <button type="submit" class="nav-button">Budget</button>
+            </form></li>
+            <li>
+                <form action="{{ url_for('predict_expenses') }}" method="POST">
+                    <button type="submit" class="nav-button">Expense Prediction</button>
+                </form>
+            </li>
+            <li><form action="{{ url_for('investmentrecommaindation') }}" method="POST">
+                <button type="submit" class="nav-button">Investment Recommendation</button>
+            </form></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="left-panel">
+            <h3>Income/Expense</h3>
+            <form id="incexp" action="/add_income_expense" method="POST">
+                <label>Amount</label>
+                <input type="number" name="amount" placeholder="Enter amount" required><br>
+                <label for="category">Category:</label><br>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="food">Food & Drinks</option>
+                    <option value="bills">Bills & Utilities</option>
+                    <option value="others">Others</option>
+                </select><br>
+                <label for="purpose">Purpose:</label>
+                <input type="text" id="purpose" name="purpose" required><br>
+                <label>Date</label>
+                <input type="date" name="date" required><br>
+                <label>Type</label>
+                <select name="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select><br>
+                <button type="submit">Add Entry</button>
+            </form>
+        </div>
+        <div class="right-panel">
+            <h3>Transaction Table </h3>
+            <div class="transactions">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Purpose</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for transaction in transactions %}
+                        <tr>
+                            <td>{{ transaction.purpose }}</td>
+                            <td>{{ transaction.category }}</td>
+                            <td>{{ transaction.amount }}</td>
+                            <td>{{ transaction.date }}</td>
+                            <td>
+                                <form action="/delete_transaction', transaction_id=transaction.id" method="post" style="display:inline;">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Transaction Overview</h3>
+
+            <!-- Add the dropdown for selecting the chart type -->
+            <div class="chart-selector">
+                <label for="chart-type">Select Chart:</label>
+                <select id="chart-type" onchange="updateChart()">
+                    <option value="income">Income Line Graph</option>
+                    <option value="expense">Expense Line Graph</option>
+                    <option value="overall">Overall Transaction Line Graph</option>
+                    <option value="category-bar">Bar Chart by Category</option>
+                </select>
+            </div>
+
+            <!-- The container for the chart -->
+            <img id="chart" src="{{ url_for('chart', chart_type='category-bar') }}" alt="Expenses by Category">
+
+        </div>
+    </div>
+
+    <!-- JavaScript to dynamically update the chart based on the dropdown selection -->
+    <script>
+        function updateChart() {
+            var chartType = document.getElementById('chart-type').value;
+            document.getElementById('chart').src = "{{ url_for('chart', chart_type='') }}" + chartType;
+        }
+    </script>
+
+</body>
+</html>
