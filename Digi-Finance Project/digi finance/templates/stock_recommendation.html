@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Finance - Stock Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='minimalist-stylesr.css') }}">
+</head>
+<body>
+    
+    <header>
+        <h1>Digi Finance</h1>
+    </header>
+    
+    <nav class="dashboard-nav">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><form action="{{ url_for('incexp') }}" method="POST">
+                <button type="submit">Income Expense</button>
+            </form></li>
+            <li><form action="{{ url_for('set_budget') }}" method="POST">
+                <button type="submit">Budget</button>
+            </form></li>
+            <li>
+                <form action="{{ url_for('predict_expenses') }}" method="POST">
+                    <button type="submit">Expense Prediction</button>
+                </form>
+            </li>
+            <li class="dropdown">
+                <button>Investment Recommendation ▼</button>
+                <div class="dropdown-content">
+                    <form action="{{ url_for('investmentrecommaindation') }}" method="POST">
+                        <button type="submit">Investment Overview</button>
+                    </form>
+                    <form action="{{ url_for('stockrecommendation') }}" method="POST">
+                        <button type="submit">Stock Recommendation</button>
+                    </form>
+                    <form action="{{ url_for('investrec') }}" method="POST">
+                        <button type="submit">Investment RecommendationS</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="minimalist-container">
+        <section class="minimalist-input-section">
+            <h1>Stock Recommendation</h1>
+            <p>Get personalized stock recommendations based on your profile.</p>
+            <form id="stock-recommendation-form" action="/stockrecommender" method="post">
+                <div class="minimalist-form-group">
+                    <label for="income">Monthly Income:</label>
+                    <input type="number" id="income" name="income" placeholder="Enter monthly income" required>
+                </div>
+                
+                <div class="minimalist-form-group">
+                    <label for="risk_tolerance">Risk Tolerance:</label>
+                    <select id="risk_tolerance" name="risk_tolerance" required>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            
+                <div class="minimalist-form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+            
+                <div class="minimalist-form-group">
+                    <label for="savings">Total Savings:</label>
+                    <input type="number" id="savings" name="savings" placeholder="Enter total savings" required>
+                </div>
+            
+                <button type="submit">Get Recommendations</button>
+            </form>
+            
+        </section>
+
+        <section class="minimalist-output-section">
+            <h2>Recommended Stocks</h2>
+            {% if recommendations %}
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Current Price</th>
+                    <th>Normalized Value</th>
+                    <th>Fuzzy Decision</th>
+                </tr>
+                {% for recommendation in recommendations %}
+                <tr>
+                    <td>{{ recommendation.Company }}</td>
+                    <td>${{ recommendation['Current Price'] }}</td>
+                    <td>{{ recommendation['Normalized Value'] }}</td>
+                    <td>{{ recommendation['Fuzzy Decision'] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <p>No recommendations available. Fill out the form above!</p>
+            {% endif %}
+        </section>
+    </div>
+</body>
+</html>
