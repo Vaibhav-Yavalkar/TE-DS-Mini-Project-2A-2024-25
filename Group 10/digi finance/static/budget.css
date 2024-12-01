@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee9e9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    width: 99%;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+h3 ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+h3 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Take up full width of the page */
+    margin: 2rem 0;
+    padding: 0 2rem; /* Add padding if you need some space on the sides */
+}
+
+.dashboard-nav {
+    background-color: #222;
+    color: #fff;
+    width: 100%; /* Full width for the navigation */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-nav ul li {
+    margin: 0 1rem;
+}
+
+.dashboard-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;
+}
+
+.button-container .btn {
+    display: inline-block; /* Ensure buttons are inline */
+    padding: 10px 20px;
+    background-color: rgb(95, 176, 149);
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 30px;
+    background-color: rgb(78, 139, 139);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 30px;
+}
+
+.popup {
+    width: 300px;
+    height: 325px;
+    background: hwb(168 20% 18%);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: antiquewhite;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.budget-statistic {
+    background-color: rgb(129, 184, 166);
+    font-size: larger;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-nav ul li button{
+    background-color: #222;
+    color: #fffff5;
+    font-size: 20px;
+    border: none;
+
+}
+
+header ul li button{
+    font-size: 20px;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: #222;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .nav-button {
+    background-color: #3e8e41;
+}

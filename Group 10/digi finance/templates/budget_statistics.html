@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Statistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='budget_statistics.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Digi Finance</h1>
+        <h3>
+            <ul>
+                <li><a href="{{ url_for('login') }}">Logout</a></li>
+            </ul>
+        </h3>
+    </header>
+    <div class="container">
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><form action="{{ url_for('incexp') }}" method="POST">
+                    <button type="submit" class="nav-button">Income Expense</button>
+                </form></li>
+                <li><form action="{{ url_for('set_budget') }}" method="POST">
+                    <button type="submit" class="nav-button">Budget</button>
+                </form></li>
+                <li>
+                    <form action="{{ url_for('predict_expenses') }}" method="POST">
+                        <button type="submit" class="nav-button">Expense Prediction</button>
+                    </form>
+                </li>
+                <li class="dropdown">
+                    <button>Investment Recommendation ▼</button>
+                    <div class="dropdown-content">
+                        <form action="{{ url_for('investmentrecommaindation') }}" method="POST">
+                            <button type="submit">Investment Overview</button>
+                        </form>
+                        <form action="{{ url_for('stockrecommendation') }}" method="POST">
+                            <button type="submit">Stock Recommendation</button>
+                        </form>
+                        <form action="{{ url_for('investrec') }}" method="POST">
+                            <button type="submit">Investment RecommendationS</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+        <h2>Budget Statistics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Spent Amount</th>
+                    <th>Remaining Amount</th>
+                    <th>Graph</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for budget in budget_stats %}
+                <tr>
+                    <td>{{ budget['Category'] }}</td>
+                    <td>{{ budget['Budget Date'] }}</td>
+                    <td>{{ budget['Budget Amount'] }}</td>
+                    <td>{{ budget['Spent Amount'] }}</td>
+                    <td>{{ budget['Remaining Amount'] }}</td>
+                    <td>
+                        <button onclick="showGraph('{{ url_for('budget_graph', budget_id=budget['id']) }}')">View Graph</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Inline Graph Display -->
+        <div id="graphDisplay">
+            <h2>Graph</h2>
+            <div id="graphContent"></div>
+        </div>
+
+        <script>
+            function showGraph(graphUrl) {
+                // Clear previous graph content
+                const graphContent = document.getElementById('graphContent');
+                graphContent.innerHTML = '';
+                
+                // Append a unique timestamp to prevent caching
+                const timestamp = new Date().getTime();
+                const fullUrl = `${graphUrl}?t=${timestamp}`;
+                
+                // Create and display the new graph image
+                const img = document.createElement('img');
+                img.src = fullUrl;
+                img.alt = 'Budget Graph';
+                
+                // Append the new image to the graph content area
+                graphContent.appendChild(img);
+            }
+        </script>
+    </div>
+</body>
+</html>

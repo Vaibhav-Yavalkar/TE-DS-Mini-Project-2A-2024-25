@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='expensdepredictor.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Digi Finance</h1>
+        <h3>
+        <ul>
+            <li><a href="{{ url_for('login') }}">Logout</a></li>
+        </ul>
+        </h3>
+    </header>
+    <div class="container">
+        <nav class="dashboard-nav">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><form action="{{ url_for('incexp') }}" method="POST">
+                    <button type="submit">Income Expense</button>
+                </form></li>
+                <li><form action="{{ url_for('set_budget') }}" method="POST">
+                    <button type="submit">Budget</button>
+                </form></li>
+                <li>
+                    <form action="{{ url_for('predict_expenses') }}" method="POST">
+                        <button type="submit">Expense Prediction</button>
+                    </form>
+                </li>
+                <li class="dropdown">
+                    <button>Investment Recommendation ▼</button>
+                    <div class="dropdown-content">
+                        <form action="{{ url_for('investmentrecommaindation') }}" method="POST">
+                            <button type="submit">Investment Overview</button>
+                        </form>
+                        <form action="{{ url_for('stockrecommendation') }}" method="POST">
+                            <button type="submit">Stock Recommendation</button>
+                        </form>
+                        <form action="{{ url_for('investrec') }}" method="POST">
+                            <button type="submit">Investment RecommendationS</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Expense Prediction Results</h1>
+
+            <!-- Display the summary -->
+            <h2>Summary</h2>
+            <p class="summary">{{ summary }}</p>
+
+            {% if prediction_image %}
+                <img src="{{ prediction_image }}" alt="Expense Prediction">
+            {% else %}
+                <p>{{ message }}</p>
+            {% endif %}
+
+            <h2>Actual Expenses</h2>
+            <div class="expenses-list">
+                {% for item in past_expenses_list %}
+                    <div class="expense-item">
+                        <span>Month:</span> {{ item[0] }}
+                    </div>
+                    <div class="expense-item">
+                        <span>Actual Expenses:</span> {{ item[1] }}
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
